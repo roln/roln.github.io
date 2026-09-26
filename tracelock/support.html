@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>技术支持与使用指南 - 临摹板 (TraceLock)</title>
+  <title>技术支持与常见问题 · Support & FAQ - 临摹板 (TraceLock)</title>
   <link rel="icon" href="./assets/icon.png">
   <style>
     :root {
@@ -12,31 +12,38 @@
       --surface-border: #334155;
       --text-main: #F8FAFC;
       --text-sub: #94A3B8;
+      --text-en: #A1A1AA;
       --primary: #6366F1;
       --accent: #F59E0B;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; }
     body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
-    .container { max-width: 820px; margin: 0 auto; padding: 40px 20px; }
-    header { padding: 20px 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 40px; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    header { padding: 20px 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 36px; }
     .nav { display: flex; justify-content: space-between; align-items: center; }
     .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; color: #fff; text-decoration: none; font-size: 1.1rem; }
     .logo img { width: 32px; height: 32px; border-radius: 8px; }
     .back { color: var(--primary); text-decoration: none; font-size: 0.95rem; }
     .content { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 36px; }
-    h1 { font-size: 2rem; margin-bottom: 16px; }
-    .meta { color: var(--text-sub); font-size: 0.9rem; margin-bottom: 30px; border-bottom: 1px solid var(--surface-border); padding-bottom: 16px; }
+    h1 { font-size: 2rem; margin-bottom: 6px; }
+    .h1-en { font-size: 1.25rem; color: #A5B4FC; margin-bottom: 16px; font-weight: 600; }
+    .meta { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 28px; border-bottom: 1px solid var(--surface-border); padding-bottom: 16px; }
     
-    .faq-item { margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .faq-item { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
     .faq-item:last-child { border-bottom: none; }
-    .faq-q { font-size: 1.15rem; font-weight: 600; color: #E2E8F0; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-    .faq-q span { color: var(--primary); font-size: 1.2rem; }
-    .faq-a { color: #CBD5E1; font-size: 0.95rem; line-height: 1.6; }
+    .faq-q { font-size: 1.15rem; font-weight: 600; color: #E2E8F0; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 8px; }
+    .faq-q span { color: var(--primary); font-size: 1.15rem; line-height: 1.3; }
+    .faq-q-en { font-size: 0.96rem; font-weight: 500; color: #818CF8; margin-left: 28px; margin-bottom: 10px; }
+    .faq-a-cn { color: #CBD5E1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 8px; margin-left: 28px; }
+    .faq-a-en { color: var(--text-sub); font-size: 0.88rem; line-height: 1.55; margin-left: 28px; }
     
     .contact-card { background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 24px; margin-top: 32px; }
-    .contact-card h3 { font-size: 1.1rem; color: #fff; margin-bottom: 8px; }
-    .contact-card p { color: #CBD5E1; font-size: 0.95rem; margin-bottom: 12px; }
-    .contact-btn { display: inline-block; background: var(--primary); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .contact-card h3 { font-size: 1.15rem; color: #fff; margin-bottom: 4px; }
+    .contact-card .card-en { font-size: 0.95rem; color: #A5B4FC; margin-bottom: 12px; }
+    .contact-card p.cn { color: #CBD5E1; font-size: 0.93rem; margin-bottom: 4px; }
+    .contact-card p.en { color: var(--text-sub); font-size: 0.86rem; margin-bottom: 16px; }
+    .contact-btn { display: inline-block; background: var(--primary); color: #fff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+    .contact-btn:hover { background: #4F46E5; }
     footer { text-align: center; margin-top: 40px; color: var(--text-sub); font-size: 0.85rem; }
   </style>
 </head>
@@ -45,67 +52,97 @@
     <header>
       <div class="nav">
         <a href="./index.html" class="logo">
-          <img src="./assets/icon.png" alt="临摹板">
+          <img src="./assets/icon.png" alt="TraceLock icon">
           <span>临摹板 (TraceLock)</span>
         </a>
-        <a href="./index.html" class="back">← 返回首页</a>
+        <a href="./index.html" class="back">← 返回首页 · Home</a>
       </div>
     </header>
 
     <div class="content">
-      <h1>技术支持与常见问题 (FAQ)</h1>
-      <div class="meta">官方技术支持 · 帮助指南</div>
+      <h1>技术支持与常见问题</h1>
+      <div class="h1-en">Support & Frequently Asked Questions (FAQ)</div>
+      <div class="meta">官方技术支持 · 帮助指南 | Official Support & User Guide</div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q1</span> 如何使用防误触锁屏与解锁？</div>
-        <div class="faq-a">
+        <div class="faq-q-en">How do I lock the screen and safely unlock it?</div>
+        <div class="faq-a-cn">
           导入图片并调整到满意的位置后，点击右上角橙色的<strong>「🔒 锁屏」</strong>按钮，屏幕将立即全屏锁定并进入最高亮度。<br>
           <strong>如何解锁：</strong> 在屏幕右下角的悬浮按钮上<strong>长按 2 秒</strong>（会有进度圆环倒计时完成动画）或<strong>快速双击</strong>即可解除锁定并恢复原有工具栏。
+        </div>
+        <div class="faq-a-en">
+          After importing and framing your image, tap the orange <strong>"🔒 Lock"</strong> button at the top right. The interface will enter full-screen lock with maximum brightness.<br>
+          <strong>To unlock:</strong> <strong>Long-press the floating button at bottom-right for 2 seconds</strong> (until the animated countdown ring completes) or <strong>double-tap quickly</strong> to unlock.
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q2</span> 垫纸描摹有什么推荐技巧？</div>
-        <div class="faq-a">
+        <div class="faq-q-en">What paper is recommended for tracing?</div>
+        <div class="faq-a-cn">
           推荐使用普通的 <strong>70g 或 80g A4 复印打印纸</strong>、薄素描纸、拷贝纸或硫酸纸。<br>
           由于应用在锁屏状态会自动将屏幕亮度调至最大，在暗光或普通室内光线环境下，普通白纸能非常清晰地透出屏幕上的素描线稿。
+        </div>
+        <div class="faq-a-en">
+          Standard <strong>70g or 80g A4 copy/printer paper</strong>, lightweight sketch paper, tracing paper, or vellum works great.<br>
+          Because TraceLock boosts screen brightness to the maximum in lock mode, normal paper will clearly show lines underneath in typical room lighting.
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q3</span> 照片太黑、背景太花，怎么转成清晰线稿？</div>
-        <div class="faq-a">
+        <div class="faq-q-en">How to extract clear lines from busy or dark photos?</div>
+        <div class="faq-a-cn">
           在底部滤镜栏中推荐使用<strong>「素描」</strong>或<strong>「轮廓」</strong>功能：<br>
-          • <strong>「素描」</strong>适合人像、风景和带光影的复杂照片，保留丰富铅笔线条；<br>
-          • <strong>「轮廓」</strong>适合动漫人物、简笔画及物体边界，能消灭杂色只留下纯黑外框。<br>
+          • <strong>「素描」</strong>：适合人像、风景和带光影的复杂照片，保留丰富铅笔线条；<br>
+          • <strong>「轮廓」</strong>：适合动漫人物、简笔画及物体边界，能消灭杂色只留下纯黑外框。<br>
           点击选中的滤镜后，右侧会弹出<strong>紫色上下滑杆</strong>，上下滑动即可实时调整线条粗细与深浅！
+        </div>
+        <div class="faq-a-en">
+          Use the <strong>"Sketch"</strong> or <strong>"Outline"</strong> filter in the bottom bar:<br>
+          • <strong>"Sketch"</strong>: Ideal for portraits, landscapes, and photos with rich shading, yielding pencil-like textures.<br>
+          • <strong>"Outline"</strong>: Best for anime, cartoons, and object contours, eliminating gradients and keeping clean outlines.<br>
+          Tap the active filter to reveal the <strong>vertical purple slider</strong> on the right to fine-tune line weight and sensitivity in real time!
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q4</span> 切换到其他应用再回来，之前的图片还在吗？</div>
-        <div class="faq-a">
-          在的！临摹板具备<strong>全状态持久化保护</strong>。即使切换到相机、微信，或者后台被系统清理，重新打开应用会自动无缝复原上次选择的图片、位置缩放大小与滤镜参数，无需重新选图。
+        <div class="faq-q-en">Will my drawing state be preserved if I switch apps?</div>
+        <div class="faq-a-cn">
+          在的！临摹板具备<strong>全状态持久化保护</strong>。即使切换到相机、其他应用，或者后台被系统回收，重新打开应用会自动无缝复原上次选择的图片、位置缩放大小与滤镜参数，无需重新选图。
+        </div>
+        <div class="faq-a-en">
+          Yes! TraceLock features <strong>full session state persistence</strong>. Even if you switch to other apps or the OS clears the background process, reopening TraceLock restores your image, zoom/pan transform, and filter settings seamlessly.
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q5</span> 应用需要联网吗？会扣费吗？</div>
-        <div class="faq-a">
+        <div class="faq-q-en">Does TraceLock require internet access or in-app purchases?</div>
+        <div class="faq-a-cn">
           不需要联网，纯本地单机运行，零网络请求。没有账户、没有云端数据上传，完全免费且无弹窗广告。
+        </div>
+        <div class="faq-a-en">
+          No internet required. TraceLock runs 100% locally on your device with zero network calls, no user accounts, and no third-party tracking.
         </div>
       </div>
 
       <div class="contact-card">
         <h3>还需要更多帮助或有建议？</h3>
-        <p>我们非常重视您的体验。如果您遇到偶发崩溃、新功能建议或有其他疑问，欢迎直接联系开发者：</p>
-        <p>电子邮箱：<strong>support@tracelock.app</strong></p>
-        <a href="mailto:support@tracelock.app?subject=TraceLock%20Support%20Feedback" class="contact-btn">发送支持邮件</a>
+        <div class="card-en">Need More Help or Have Feedback?</div>
+        <p class="cn">我们非常重视您的体验。如果您遇到偶发崩溃、新功能建议或有其他疑问，欢迎直接联系开发者：</p>
+        <p class="en">We value your experience. If you encounter bugs, have feature requests, or need assistance, feel free to reach out:</p>
+        <p class="cn">电子邮箱 / Email: <strong>support@tracelock.app</strong></p>
+        <div style="margin-top: 12px;">
+          <a href="mailto:support@tracelock.app?subject=TraceLock%20Support%20Feedback" class="contact-btn">发送支持邮件 · Send Email</a>
+        </div>
       </div>
     </div>
 
     <footer>
-      &copy; 2026 临摹板 (TraceLock) · 保持纯净，为创作者服务
+      &copy; 2026 临摹板 (TraceLock) · 保持纯净，为创作者服务 | Stay Pure, Built for Creators
     </footer>
   </div>
 </body>
