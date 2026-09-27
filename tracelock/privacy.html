@@ -61,14 +61,14 @@
       </div>
 
       <div class="highlight">
-        <p class="cn"><strong>核心承诺：</strong> 临摹板是一款完全运行于设备本地的离线绘画辅助工具。我们<strong>不设用户账号体系、不接入网络统计与广告追踪SDK、不向任何云端服务器上传您的照片或任何个人数据</strong>。</p>
-        <p class="en"><strong>Core Commitment:</strong> TraceLock is a 100% offline local tracing and sketching utility. We do not require account registration, do not integrate analytics or ad-tracking SDKs, and never upload your photos or personal data to any external server.</p>
+        <p class="cn"><strong>核心承诺：</strong> 临摹板的图片处理完全在设备本地完成。我们<strong>不设用户账号体系、不接入网络统计与广告追踪 SDK、不向任何云端服务器上传您的照片或个人数据</strong>。购买与恢复购买由 Apple 的 StoreKit 和 App Store 安全处理。</p>
+        <p class="en"><strong>Core Commitment:</strong> TraceLock processes images entirely on your device. We do not require an account, integrate analytics or ad-tracking SDKs, or upload your photos or personal data. Purchases and purchase restoration are securely handled by Apple's StoreKit and App Store.</p>
       </div>
 
       <h2>一、我们收集与处理的信息</h2>
       <h3 class="h2-en">1. Information We Collect and Process</h3>
-      <p class="cn">作为一款纯单机本地工具，我们仅在实现绘图辅助功能所必需的范围内处理以下数据，所有数据均保留在您的终端设备内部：</p>
-      <p class="en">As a standalone offline app, all processing takes place entirely on your device. We do not collect personal identifiers:</p>
+      <p class="cn">我们仅在实现临摹与购买解锁所必需的范围内处理以下数据。图片与构图数据保留在您的终端设备内部：</p>
+      <p class="en">We process only what is needed for tracing and purchase entitlement. Images and canvas settings remain on your device:</p>
       <ul>
         <li>
           <strong>本地图片数据：</strong> 当您主动使用“选图”功能时，系统图片选择器会向本应用提供您挑选的单张图片。该图片仅在本地内存与应用专属私有沙盒中进行矩阵变换、素描滤镜计算与临摹显示，绝无任何网络上传路径。
@@ -77,6 +77,10 @@
         <li>
           <strong>应用状态持久化数据：</strong> 为了保证您在应用切换至后台或系统清理后重新打开仍能继续创作，本应用会将您上次挑选的图片缓存、图片缩放与平移坐标、滤镜类型及滑杆强度等配置保存在本地私有安全存储（SharedPreferences / UserDefaults）中。
           <span class="en-sub"><strong>App State Persistence:</strong> To preserve your drawing session across app switches, cached image data, pan/zoom matrix coordinates, and filter parameters are stored locally on your device (SharedPreferences / UserDefaults).</span>
+        </li>
+        <li>
+          <strong>试用与购买状态：</strong> 3 天试用的首次启动时间保存在 iOS 钥匙串中。永久解锁商品、付款和恢复购买由 Apple StoreKit 与 App Store 处理。开发者不会收到您的付款卡号或 Apple 账户密码。
+          <span class="en-sub"><strong>Trial and Purchase Status:</strong> The start of the 3-day trial is stored in the iOS Keychain. The lifetime unlock, payment, and purchase restoration are handled by Apple StoreKit and the App Store. The developer never receives your payment card number or Apple Account password.</span>
         </li>
       </ul>
 
@@ -99,16 +103,18 @@
       <h3 class="h2-en">3. Third-Party SDKs and Data Sharing</h3>
       <p class="cn">本应用<strong>未集成任何第三方广告 SDK、用户行为分析统计 SDK 或推送 SDK</strong>。我们不会向任何第三方机构、组织或个人共享、转让、公开披露或出售您的任何个人信息与图片数据。</p>
       <p class="en">TraceLock contains <strong>no third-party advertisement SDKs, analytics tracking SDKs, or push notification services</strong>. We do not share, sell, or disclose any user data to third parties.</p>
+      <p class="cn">本应用使用 Apple 提供的 StoreKit 系统框架加载商品价格、完成购买并恢复已购项目。相关 App Store 数据由 Apple 根据其隐私政策处理。</p>
+      <p class="en">TraceLock uses Apple's StoreKit system framework to load localized product prices, complete purchases, and restore prior purchases. Related App Store data is processed by Apple under Apple's privacy policy.</p>
 
       <h2>四、未成年人信息保护</h2>
       <h3 class="h2-en">4. Children's Privacy</h3>
-      <p class="cn">本应用适合包括儿童简笔画练习在内的所有年龄段用户使用。由于本应用完全离线且不具备用户注册和联网功能，因此不会收集任何儿童或未成年人的个人身份信息。</p>
-      <p class="en">TraceLock is suitable for users of all ages, including children learning to sketch. Because the app operates purely offline without user accounts or network access, we do not collect any personal information from children.</p>
+      <p class="cn">本应用适合包括儿童简笔画练习在内的所有年龄段用户使用。本应用不提供用户注册、不含广告与行为追踪，也不会收集儿童或未成年人的个人身份信息。应用内购买受 Apple 的家庭与购买授权设置约束。</p>
+      <p class="en">TraceLock is suitable for users of all ages, including children learning to sketch. It has no account registration, advertising, or behavioral tracking and does not collect children's personal information. In-app purchases remain subject to Apple's family and purchase authorization settings.</p>
 
       <h2>五、数据安全与存储期限</h2>
       <h3 class="h2-en">5. Data Security and Retention</h3>
-      <p class="cn">您导入的图片与临时状态数据均保存在您移动智能终端的私有沙盒安全目录中，受到操作系统沙箱机制的严格隔离保护。当您在设备上卸载本应用时，上述所有本地缓存数据将被操作系统彻底清除。</p>
-      <p class="en">Imported images and temporary session states are saved exclusively in your device's isolated application sandbox. Uninstalling the application completely erases all stored local cache and settings.</p>
+      <p class="cn">您导入的图片与临时状态数据保存在设备的私有沙盒中，卸载应用时会由操作系统清除。为防止通过反复安装重置试用期，试用起始时间可能保留在系统钥匙串中。永久购买记录由 Apple App Store 绑定到您的 Apple 账户并管理。</p>
+      <p class="en">Imported images and temporary session state are stored in the app sandbox and removed by the operating system when the app is uninstalled. To prevent repeated reinstalls from resetting the trial, the trial start date may remain in the system Keychain. Lifetime purchase history is linked to and managed by your Apple Account through the App Store.</p>
 
       <h2>六、联系我们</h2>
       <h3 class="h2-en">6. Contact Us</h3>
