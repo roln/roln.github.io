@@ -3,56 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perler & Fuse Beads Studio - Support</title>
+  <title>Support & FAQ · 技术支持与常见问题 - Perler & Fuse Beads Studio</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 24px;
-      background: #fafafa;
+    :root {
+      --bg: #0B0F19;
+      --surface: #1E293B;
+      --surface-border: #334155;
+      --text-main: #F8FAFC;
+      --text-sub: #94A3B8;
+      --text-cn: #94A3B8;
+      --primary: #EC4899;
+      --primary-hover: #DB2777;
+      --accent: #F59E0B;
     }
-    .card {
-      background: #fff;
-      padding: 36px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-    h1 { font-size: 24px; color: #111; margin-bottom: 8px; }
-    h2 { font-size: 18px; color: #222; margin-top: 24px; margin-bottom: 8px; }
-    p { margin-bottom: 14px; color: #555; }
-    ul { margin-bottom: 14px; padding-left: 20px; color: #555; }
-    li { margin-bottom: 6px; }
-    .faq-q { font-weight: 600; color: #111; }
-    .footer { margin-top: 32px; font-size: 13px; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    header { padding: 20px 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 36px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; color: #fff; text-decoration: none; font-size: 1.15rem; }
+    .logo-badge { width: 34px; height: 34px; border-radius: 9px; background: linear-gradient(135deg, #FF6B95, #EC4899, #8B5CF6); display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(236,72,153,0.35); }
+    .back { color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .back:hover { text-decoration: underline; }
+    .content { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 36px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    h1 { font-size: 2.0rem; margin-bottom: 4px; color: #FFFFFF; font-weight: 800; letter-spacing: -0.5px; }
+    .h1-cn { font-size: 1.25rem; color: #F472B6; margin-bottom: 16px; font-weight: 600; }
+    .meta { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 28px; border-bottom: 1px solid var(--surface-border); padding-bottom: 16px; }
+    
+    .faq-item { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 1.15rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 10px; }
+    .faq-q span { color: var(--primary); font-size: 1.15rem; line-height: 1.3; font-weight: 800; }
+    .faq-q-cn { font-size: 0.96rem; font-weight: 500; color: #F472B6; margin-left: 36px; margin-bottom: 10px; }
+    .faq-a-en { color: #F1F5F9; font-size: 0.96rem; line-height: 1.65; margin-bottom: 8px; margin-left: 36px; }
+    .faq-a-cn { color: var(--text-cn); font-size: 0.88rem; line-height: 1.55; margin-left: 36px; }
+    
+    .contact-card { background: rgba(236,72,153,0.08); border: 1px solid rgba(236,72,153,0.25); border-radius: 14px; padding: 26px; margin-top: 36px; }
+    .contact-card h3 { font-size: 1.25rem; color: #fff; margin-bottom: 4px; font-weight: 700; }
+    .contact-card .card-cn { font-size: 0.96rem; color: #F472B6; margin-bottom: 14px; }
+    .contact-card p.en { color: #F1F5F9; font-size: 0.94rem; margin-bottom: 4px; }
+    .contact-card p.cn { color: var(--text-cn); font-size: 0.88rem; margin-bottom: 18px; }
+    .contact-btn { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #EC4899, #DB2777); color: #fff; padding: 11px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 14px rgba(236,72,153,0.35); transition: opacity 0.2s; }
+    .contact-btn:hover { opacity: 0.92; }
+    
+    footer { text-align: center; margin-top: 40px; color: var(--text-sub); font-size: 0.85rem; }
+    footer a { color: var(--text-sub); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: #fff; text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Perler & Fuse Beads Studio - Support & FAQ</h1>
-    <p>Welcome to Perler & Fuse Beads Studio support. We are here to help you enjoy physical fuse bead crafting with precise on-screen lightboxes.</p>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <a href="./index.html" class="logo">
+          <div class="logo-badge">🪡</div>
+          <span>Perler &amp; Fuse Beads Studio</span>
+        </a>
+        <a href="./index.html" class="back">&larr; Home &middot; 首页</a>
+      </div>
+    </header>
 
-    <h2>Frequently Asked Questions</h2>
+    <div class="content">
+      <h1>Support &amp; Frequently Asked Questions</h1>
+      <div class="h1-cn">官方技术支持与常见问题帮助指南</div>
+      <div class="meta">Perler &amp; Fuse Beads Studio &middot; Version 1.1.x &middot; Official Support Page</div>
 
-    <p class="faq-q">Q: How do I align the real pegboard with my screen?</p>
-    <p>A: When entering the Lightbox workspace, tap "2.6mm" (for mini beads) or "5.0mm" (for midi beads) at the bottom. The app calibrates pixels to the exact physical millimeter scale of your screen. Place your transparent pegboard directly over the screen, and the pins will line up with the bead dots.</p>
+      <!-- FAQ 1: 1:1 对齐原理 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q1</span> How does the 1:1 Pegboard Lightbox physically align with real boards?</div>
+        <div class="faq-q-cn">1:1 物理透光拼作台是如何与真实钉板严丝合缝对齐的？</div>
+        <div class="faq-a-en">
+          The app calculates the precise physical screen pitch (Points Per Millimeter) based on your specific iPhone or iPad model. It supports both <strong>2.6 mm (Mini beads)</strong> and <strong>5.0 mm (Midi standard beads)</strong>.<br>
+          Simply place your transparent pegboard directly on top of your device screen &mdash; the on-screen glowing pixel pins will physically line up with the peg holes on your board. You can place beads directly on the screen without looking back and forth at paper patterns.
+        </div>
+        <div class="faq-a-cn">
+          应用根据您具体的 iPhone 或 iPad 机型，直接读取硬件物理像素间距，精确计算毫米级物理比例。支持国际通用的 <strong>2.6 毫米（Mini 软豆）</strong> 与 <strong>5.0 毫米（Midi 标准硬豆）</strong> 两种物理规格。<br>
+          使用时只需将透明亚克力钉板直接放置在设备屏幕上，屏幕上的亮光点会与透明钉板孔位严丝合缝对齐，您可以直接将豆子放置在板上拼作，无需来回扭头对照图纸。
+        </div>
+      </div>
 
-    <p class="faq-q">Q: How do I unlock the screen when touch-armor lock is active?</p>
-    <p>A: When locked, touch gestures are blocked so your hands and plates don't move the canvas. To unlock, simply press and hold the lock indicator in the upper-right corner for 1.5 seconds.</p>
+      <!-- FAQ 2: 锁屏与解锁 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q2</span> How do I lock the screen to prevent accidental touches, and how do I unlock it?</div>
+        <div class="faq-q-cn">拼作时如何防误触锁屏？如何解锁？</div>
+        <div class="faq-a-en">
+          When you enter the Lightbox, tap the <strong>"🔒 Lock"</strong> button to activate touch-armor mode. All navigation bars and touch controls will be hidden, preventing your hands, wrists, or the sliding pegboard from shifting or zooming the canvas.<br>
+          <strong>To unlock:</strong> Simply <strong>press and hold the lock indicator in the upper-right corner for 1.5 seconds</strong>. The circular countdown ring will complete and safely unlock your screen.
+        </div>
+        <div class="faq-a-cn">
+          在透光工作台页面，点击 <strong>"🔒 锁定"</strong> 即可启动全屏防误触模式。所有工具栏和触控手势都将被拦截锁定，手腕支撑或钉板轻微滑动都不会导致画布位移或缩放。<br>
+          <strong>如何解锁：</strong> 在屏幕右上角的锁定指示胶囊上<strong>长按 1.5 秒</strong>，等待外围环形进度动画转满一圈，即可平滑解除锁定。
+        </div>
+      </div>
 
-    <p class="faq-q">Q: What is the Solo Color Focus feature?</p>
-    <p>A: In the workspace, tap any bead color in the bottom swatch bar. Only that color will shine brightly while all other colors are dimmed by 90%, preventing mistakes and eye fatigue.</p>
+      <!-- FAQ 3: 4 步流程 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q3</span> How does the 4-step creation workflow work?</div>
+        <div class="faq-q-cn">应用的 4 步极简创作流程是怎样运作的？</div>
+        <div class="faq-a-en">
+          The app simplifies pattern making into 4 intuitive steps:<br>
+          <strong>1. Crop:</strong> Import any photo, freely zoom, pan, and frame your subject. You can toggle <em>AI Remove Background</em> here.<br>
+          <strong>2. Setup:</strong> Preview with instant real-time toggle (Bead Effect vs. Original Colors). Choose pegboard sizes (28, 52, or 64 pegs), multi-board grids (e.g., 2&times;2), and select your bead palette tier (up to 264 colors).<br>
+          <strong>3. Editor:</strong> Fine-tune any bead pixel with tools: Pencil, Color Picker, Bucket Fill, Eraser, and Undo/Redo.<br>
+          <strong>4. Export &amp; Share:</strong> Save high-resolution PNG patterns, share or print A4 assembly sheets, or enter the 1:1 Lightbox.
+        </div>
+        <div class="faq-a-cn">
+          应用将复杂的图纸生成重构为极致流畅的 4 步向导流程：<br>
+          <strong>第 1 步 裁剪：</strong> 选取任意相片，自由捏合缩放平移进行构图，支持一键开启“AI 去背景”；<br>
+          <strong>第 2 步 设置：</strong> 毫秒级对比“拼豆效果 / 原色”，挑选单方板规格（28 / 52 / 64 孔）或 X&times;Y 多板拼接阵列，选择色盒色阶（最高 264 色）；<br>
+          <strong>第 3 步 微调：</strong> 在像素编辑器中自由微调每个格子（画笔、橡皮擦、吸管、油漆桶、撤销与重做）；<br>
+          <strong>第 4 步 导出与分享：</strong> 导出高清拼豆图、分享或打印 A4 拼作图纸，或直接进入 1:1 垫板拼作台。
+        </div>
+      </div>
 
-    <h2>Contact Us</h2>
-    <p>If you experience any issues, feature suggestions, or bug reports, feel free to contact developer support:</p>
-    <p><strong>Email:</strong> <a href="mailto:cnwshuai@qq.com">cnwshuai@qq.com</a></p>
-    <p><strong>Developer:</strong> Wang Shuai</p>
+      <!-- FAQ 4: AI 去背景 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q4</span> How does the "AI Remove Background" feature work?</div>
+        <div class="faq-q-cn">“AI 去背景”功能是如何工作的？有什么好处？</div>
+        <div class="faq-a-en">
+          Powered by on-device neural vision processing, turning on <strong>"AI Remove Background"</strong> in Step 1 will automatically detect and extract your main subject (people, pets, anime figures, toys) and erase messy real-world backgrounds.<br>
+          This prevents extraneous background clutter from being turned into dozens of unwanted, hard-to-find bead colors, leaving you with a clean, focused character pattern.
+        </div>
+        <div class="faq-a-cn">
+          在第 1 步构图裁剪中开启<strong>“AI 去背景”</strong>开关，设备端 AI 引擎将自动识别画面中的主体角色（宠物、人物、二次元动漫主角、公仔等），并秒级剥离杂乱背景。<br>
+          这样可以彻底避免背景杂质被量化转换成几十种难以寻找的杂色豆，让最终图纸主体鲜明、颜色纯净。
+        </div>
+      </div>
 
-    <div class="footer">
-      &copy; 2026 Wang Shuai. All rights reserved.
+      <!-- FAQ 5: 单色聚焦 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q5</span> What is Solo Color Focus, and how does it prevent eye strain?</div>
+        <div class="faq-q-cn">什么是“单色高亮聚焦”？它是如何防止看错漏拼的？</div>
+        <div class="faq-a-en">
+          When working on large or complex patterns with dozens of similar color tones, tap any color code swatch in the bottom palette. Only the beads with that specific color code will shine at 100% brightness, while all other bead colors are dimmed.<br>
+          This allows you to focus on placing one color at a time across the entire board without missing spots or mixing up adjacent similar shades.
+        </div>
+        <div class="faq-a-cn">
+          当面对拥有几十种相似色号的复杂大图时，在工作台底部色号栏中轻点任一色号，画布上仅属于该色号的珠子会全亮高光显示，其余所有颜色全部半透明暗化。<br>
+          您可以一次专注拼完一种颜色，杜绝找错格子、放错相近色，极大保护视力并提升拼作效率。
+        </div>
+      </div>
+
+      <!-- FAQ 6: 备料清单 (BOM) -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q6</span> How do I check bead counts and color codes before crafting?</div>
+        <div class="faq-q-cn">开拼前如何查看每种颜色的颗数清单和色号代码？</div>
+        <div class="faq-a-en">
+          In the Lightbox or Export view, open the <strong>Material Shopping List (BOM)</strong>. The app accurately tabulates the exact bead count required for each color swatch, mapped to popular industry bead palette codes (such as Artkal, Perler, Hama, and Mard).<br>
+          You will know exactly how many beads you need to prepare before starting, avoiding running out mid-way.
+        </div>
+        <div class="faq-a-cn">
+          在工作台或导出页面打开<strong>“备料清单 (BOM)”</strong>，应用会自动精确统计整幅作品所需的每种颜色的官方色号编码与精确颗数，并对应主流品牌色系（如 Artkal、Perler、Hama、Mard 漫漫豆等）。<br>
+          在动工前就能清晰核对色盒余量，缺什么颜色一目了然，再也不用担心拼到一半断货。
+        </div>
+      </div>
+
+      <!-- FAQ 7: 试用期与 VIP 购买 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q7</span> How does the Free Trial work, and how do I restore my purchase?</div>
+        <div class="faq-q-cn">5 天免费试用规则是怎样的？更换设备后如何恢复购买？</div>
+        <div class="faq-a-en">
+          The app offers a <strong>5-Day Free Trial</strong> starting from your first launch, giving you full access to all studio features, multi-board stitching, and lightboxes.<br>
+          After the trial, you can unlock <strong>Lifetime VIP</strong> with a single, one-time purchase (no recurring subscriptions).<br>
+          <strong>To Restore Purchases:</strong> If you switch devices or reinstall the app, open <em>Settings</em> and tap <em>"Restore Purchases"</em> while logged in with your original Apple ID. Your purchase will be restored immediately at zero cost.
+        </div>
+        <div class="faq-a-cn">
+          应用为每位新用户提供 <strong>5 天全功能免费试用（5-Day Free Trial）</strong>，试用期内透光拼作台、多板拼接与导出等所有高级特性均可完整体验。<br>
+          试用期结束后，可通过一次性买断 <strong>Lifetime VIP</strong> 永久解锁全部功能（无自动续费订阅，一次购买终生使用）。<br>
+          <strong>如何恢复购买：</strong> 若更换新手机、iPad 或重新安装应用，只需在 App 内打开<em>“设置”</em>并点击<em>“恢复购买 (Restore Purchases)”</em>，即可零费用找回已购买的 VIP 特权。
+        </div>
+      </div>
+
+      <!-- FAQ 8: 隐私与离线安全 -->
+      <div class="faq-item">
+        <div class="faq-q"><span>Q8</span> Does the app upload my photos to any cloud servers?</div>
+        <div class="faq-q-cn">应用会把我的私人相片上传到服务器吗？</div>
+        <div class="faq-a-en">
+          <strong>Never.</strong> The app operates 100% on-device using native iOS/iPadOS graphics and neural engines. No photos, generated patterns, or user data are ever uploaded or transmitted to external servers. No account registration is required, and there are zero advertisements or tracking SDKs.
+        </div>
+        <div class="faq-a-cn">
+          <strong>绝对不会。</strong> 应用采用原生 CoreGraphics 与 Vision 引擎，100% 在您的本地设备端离线运行。绝不向任何外部服务器上传您的照片或图纸。应用无需注册登录，无第三方追踪 SDK，零广告，绝对保护您的隐私。
+        </div>
+      </div>
+
+      <!-- 联系卡片 -->
+      <div class="contact-card">
+        <h3>Need More Help? Contact Developer Support</h3>
+        <div class="card-cn">仍需帮助？随时联系开发者团队</div>
+        <p class="en">If you encounter any bugs, have feature requests, or need assistance, feel free to reach out directly:</p>
+        <p class="en">Official Support Email: <strong>matehubnet@outlook.com</strong></p>
+        <p class="cn">如果您遇到任何问题、有宝贵的改进建议或需要技术支持，欢迎随时发信与我们联系，我们通常会在 24 小时内回复：</p>
+        <a href="mailto:matehubnet@outlook.com?subject=Perler%20Beads%20Studio%20Support%20Inquiry" class="contact-btn">
+          ✉️ Send Email · 发送邮件给开发者
+        </a>
+      </div>
+
     </div>
+
+    <footer>
+      <p>&copy; 2026 Wang Shuai. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="./privacy.html">Privacy Policy · 隐私政策</a> &middot;
+        <a href="./terms.html">Terms of Service · 服务条款</a> &middot;
+        <a href="./support.html">Support · 技术支持</a>
+      </p>
+    </footer>
   </div>
 </body>
 </html>

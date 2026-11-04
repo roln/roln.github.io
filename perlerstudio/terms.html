@@ -3,83 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perler & Fuse Beads Studio - Terms of Service</title>
+  <title>Terms of Service · 服务条款 - Perler & Fuse Beads Studio</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 24px;
-      background: #fafafa;
+    :root {
+      --bg: #0B0F19;
+      --surface: #1E293B;
+      --surface-border: #334155;
+      --text-main: #F8FAFC;
+      --text-sub: #94A3B8;
+      --text-cn: #94A3B8;
+      --primary: #EC4899;
+      --primary-hover: #DB2777;
     }
-    .card {
-      background: #fff;
-      padding: 36px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-    h1 { font-size: 24px; color: #111; margin-bottom: 8px; }
-    h2 { font-size: 18px; color: #222; margin-top: 24px; margin-bottom: 8px; }
-    p { margin-bottom: 14px; color: #555; }
-    ul { margin-bottom: 14px; padding-left: 20px; color: #555; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    header { padding: 20px 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 36px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; color: #fff; text-decoration: none; font-size: 1.15rem; }
+    .logo-badge { width: 34px; height: 34px; border-radius: 9px; background: linear-gradient(135deg, #FF6B95, #EC4899, #8B5CF6); display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(236,72,153,0.35); }
+    .back { color: var(--primary); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .back:hover { text-decoration: underline; }
+    .content { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 36px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    h1 { font-size: 2.0rem; margin-bottom: 4px; color: #FFFFFF; font-weight: 800; }
+    .h1-cn { font-size: 1.25rem; color: #F472B6; margin-bottom: 16px; font-weight: 600; }
+    .meta { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 28px; border-bottom: 1px solid var(--surface-border); padding-bottom: 16px; }
+    h2 { font-size: 1.25rem; color: #FFFFFF; margin-top: 26px; margin-bottom: 8px; font-weight: 700; }
+    .h2-cn { font-size: 0.96rem; color: #F472B6; margin-bottom: 12px; font-weight: 600; }
+    p { margin-bottom: 12px; color: #F1F5F9; font-size: 0.96rem; line-height: 1.65; }
+    p.cn { color: var(--text-cn); font-size: 0.88rem; line-height: 1.55; margin-bottom: 18px; }
+    ul { margin-bottom: 12px; padding-left: 24px; color: #F1F5F9; font-size: 0.95rem; }
+    ul.cn { color: var(--text-cn); font-size: 0.88rem; margin-bottom: 18px; }
     li { margin-bottom: 6px; }
-    .footer { margin-top: 32px; font-size: 13px; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    .contact-card { background: rgba(236,72,153,0.08); border: 1px solid rgba(236,72,153,0.25); border-radius: 14px; padding: 22px; margin-top: 32px; }
+    .contact-card p { margin-bottom: 6px; }
+    footer { text-align: center; margin-top: 40px; color: var(--text-sub); font-size: 0.85rem; }
+    footer a { color: var(--text-sub); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: #fff; text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Perler &amp; Fuse Beads Studio - Terms of Service</h1>
-    <p><strong>Effective Date:</strong> October 14, 2026</p>
-    <p>By downloading or using Perler &amp; Fuse Beads Studio ("the App"), you agree to these terms. If you do not agree, please delete the App.</p>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <a href="./index.html" class="logo">
+          <div class="logo-badge">🪡</div>
+          <span>Perler &amp; Fuse Beads Studio</span>
+        </a>
+        <a href="./index.html" class="back">&larr; Home &middot; 首页</a>
+      </div>
+    </header>
 
-    <h2>1. License</h2>
-    <p>We grant you a personal, non-exclusive, non-transferable license to use the App on Apple devices you own or control, in accordance with the App Store Terms of Service.</p>
+    <div class="content">
+      <h1>Terms of Service</h1>
+      <div class="h1-cn">用户服务协议</div>
+      <div class="meta">Effective Date / 生效日期: November 4, 2026 &middot; Version 1.1</div>
 
-    <h2>2. Free Trial</h2>
-    <p>The App includes a <strong>10-day free trial</strong> beginning from your first launch. During the trial you may use all features without payment.</p>
-    <ul>
-      <li>Your trial start date is recorded on your device and, if you are signed into iCloud, synced through Apple iCloud Key-Value Storage so it stays consistent across your devices.</li>
-      <li>Deleting the App, resetting the device, or switching devices does not reset an already-used trial when iCloud sync is available.</li>
-      <li>Attempting to manipulate the device clock to restart the trial may result in the trial being permanently ended.</li>
-    </ul>
+      <p>By downloading, installing, or using Perler &amp; Fuse Beads Studio ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use or immediately uninstall the App.</p>
+      <p class="cn">在下载、安装或使用 Perler &amp; Fuse Beads Studio（以下简称“本应用”）前，请仔细阅读本服务条款。一旦使用本应用，即代表您同意受本条款约束；若您不同意本条款，请停止使用并卸载本应用。</p>
 
-    <h2>3. Purchases</h2>
-    <ul>
-      <li><strong>Lifetime VIP</strong> is a one-time, non-recurring purchase that unlocks all features permanently on the devices signed into your Apple ID.</li>
-      <li>Payment is processed by Apple. We do not receive your payment details.</li>
-      <li>Purchases are final. Refund requests are handled solely by Apple under its refund policy.</li>
-      <li>If you change devices or lose access to your Apple ID, you may lose access to your purchase. You can restore purchases within the App using the "Restore Purchases" option.</li>
-    </ul>
+      <h2>1. License Grant</h2>
+      <div class="h2-cn">1. 软件许可范围</div>
+      <p>We grant you a personal, revocable, non-exclusive, non-transferable, non-sublicensable limited license to install and use the App on Apple-branded iOS/iPadOS devices that you own or control, solely for personal, non-commercial creative purposes, in compliance with the Apple App Store Terms of Service.</p>
+      <p class="cn">我们授予您一项个人的、可撤销的、非独占的、不可转让且不可分许可的有限软件使用权，允许您在拥有或控制的 Apple iOS/iPadOS 设备上安装并使用本应用，仅限个人非商业创作用途，且受 Apple App Store 服务条款约束。</p>
 
-    <h2>4. Acceptable Use</h2>
-    <p>You agree not to:</p>
-    <ul>
-      <li>Reverse engineer, decompile, or modify the App except where such restriction is prohibited by law.</li>
-      <li>Redistribute, resell, or sublicense the App.</li>
-      <li>Use the App to create or distribute content that infringes intellectual property rights.</li>
-    </ul>
+      <h2>2. Free Trial Policy</h2>
+      <div class="h2-cn">2. 免费试用政策</div>
+      <p>The App provides a <strong>5-day free trial</strong> starting from the initial launch on your device. During the 5-day trial period, you can access and evaluate all features including the 1:1 Lightbox workspace, multi-board array stitching, and pattern exports.</p>
+      <p class="cn">本应用为您提供为期 <strong>5 天的全功能免费试用期</strong>，自首次打开应用起计算。在此期间，您可以完整体验包括 1:1 物理透光拼作台、多板大图拼接与图纸导出在内的全部高级功能。</p>
+      <ul>
+        <li>The trial start timestamp is saved locally and synced via Apple iCloud Key-Value Storage (if enabled) to maintain consistency across your personal devices.</li>
+        <li>Uninstalling, reinstalling, or device clock tampering will not extend the free trial period.</li>
+      </ul>
+      <ul class="cn">
+        <li>试用起始时间保存在本地，并在开启 iCloud 时通过 Apple 云端键值安全同步，确保您在多台个人设备间拥有连贯的试用体验。</li>
+        <li>卸载重装或人为调整设备系统时钟不会重置或延长试用期。</li>
+      </ul>
 
-    <h2>5. Intellectual Property</h2>
-    <p>The App, including its software, design, algorithms, and the bead color reference data, is owned by Wang Shuai and is protected by copyright and other intellectual property laws. The name and brand of third-party bead products referenced for color-matching purposes remain the property of their respective owners.</p>
+      <h2>3. Lifetime VIP Purchase &amp; Payment</h2>
+      <div class="h2-cn">3. 永久 VIP 购买与内购支付</div>
+      <p>Following the expiration of the free trial, access to advanced features (including the 1:1 Lightbox workspace and full pattern exports) requires unlocking <strong>Lifetime VIP</strong> through a one-time In-App Purchase.</p>
+      <p class="cn">5 天免费试用期结束后，使用 1:1 物理透光拼作台及完整图纸导出等高级功能需通过一次性应用内购买解锁 <strong>Lifetime VIP（永久会员）</strong>。</p>
+      <ul>
+        <li><strong>One-Time Buyout:</strong> Lifetime VIP is a one-time purchase with no recurring subscription fees, no auto-renewal, and no surprise charges.</li>
+        <li><strong>Payment Processing:</strong> All transactions are securely processed by Apple App Store / StoreKit. We do not store or process your financial or credit card information.</li>
+        <li><strong>Restore Purchases:</strong> You may restore your Lifetime VIP on any authorized iOS/iPadOS device bound to the same Apple ID at zero extra cost via the "Restore Purchases" button in Settings.</li>
+        <li><strong>Refunds:</strong> Refund requests are managed exclusively by Apple according to App Store customer refund policies.</li>
+      </ul>
+      <ul class="cn">
+        <li><strong>一次买断：</strong> 永久会员为终身买断制，无自动续费、无周期性订阅扣费。</li>
+        <li><strong>安全结算：</strong> 所有支付均由 Apple App Store 官方安全结算系统处理，我们不收集或储存您的任何支付凭据或信用卡信息。</li>
+        <li><strong>恢复购买：</strong> 在同一 Apple ID 下绑定的任意设备上，点击“设置”页面的“恢复购买”即可即时找回 VIP 权益，无需再次付费。</li>
+        <li><strong>退款政策：</strong> 退款申请由 Apple App Store 官方客服系统依据其退款政策统一处理。</li>
+      </ul>
 
-    <h2>6. Disclaimer of Warranties</h2>
-    <p>The App is provided "as is" without warranty of any kind. To the maximum extent permitted by law, we disclaim all implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
-    <p>The 1:1 lightbox alignment depends on your device's actual screen dimensions and pixel density, which can vary slightly between models. We recommend verifying physical alignment with a single bead before starting a large project.</p>
+      <h2>4. User Content &amp; Intellectual Property</h2>
+      <div class="h2-cn">4. 用户创作内容与知识产权</div>
+      <p>You retain full ownership of the photos you import and the physical bead artworks you craft using the App. The App itself &mdash; including its algorithms, scale-matching engines, interface design, and bead color databases &mdash; is the intellectual property of Wang Shuai and protected under applicable copyright laws. Third-party brand names (such as Perler, Artkal, Hama) referenced in the color-matching system are trademarks of their respective owners.</p>
+      <p class="cn">您保留对您所导入的照片以及拼作出的实体作品的全部所有权。本应用本身（包括其算法、物理对齐引擎、交互设计及色号参考数据库）受法律版权保护。调色板匹配中所引用的第三方品牌名称仅用于色系标号客观指引，相关商标归属其各自权利人所有。</p>
 
-    <h2>7. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App.</p>
+      <h2>5. Disclaimers &amp; Limitation of Liability</h2>
+      <div class="h2-cn">5. 免责声明与责任限制</div>
+      <p>The App is provided "as is" and "as available" without warranties of any kind. Physical screen dimensions may have microscopic variations across manufacturing batches; users are advised to verify physical peg spacing with a single sample bead prior to assembling large-scale projects.</p>
+      <p class="cn">本应用按“现状”提供，不作任何明示或暗示的保证。不同屏幕批次硬件物理尺寸可能存在微米级制造公差，建议在大型项目动工前使用单颗豆子初步校验物理对齐间距。</p>
 
-    <h2>8. Changes</h2>
-    <p>We may update these terms in future versions of the App. Continued use of the App after changes constitutes acceptance of the revised terms.</p>
+      <!-- 联系方式 -->
+      <div class="contact-card">
+        <h3>Contact Us</h3>
+        <p>If you have any questions, inquiries, or feedback regarding these Terms of Service, please contact us at:</p>
+        <p>Email: <a href="mailto:matehubnet@outlook.com?subject=Perler%20Studio%20Terms%20Inquiry" style="color: var(--primary); text-decoration: none; font-weight: 600;">matehubnet@outlook.com</a></p>
+        <p style="color: var(--text-cn); font-size: 0.88rem; margin-top: 6px;">若对本服务协议有任何疑问或建议，欢迎随时通过官方支持邮箱联系我们。</p>
+      </div>
 
-    <h2>9. Contact</h2>
-    <p>Questions about these terms? Email us at <a href="mailto:cnwshuai@qq.com">cnwshuai@qq.com</a>.</p>
-
-    <div class="footer">
-      &copy; 2026 Wang Shuai. All rights reserved.
     </div>
+
+    <footer>
+      <p>&copy; 2026 Wang Shuai. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="./privacy.html">Privacy Policy · 隐私政策</a> &middot;
+        <a href="./terms.html">Terms of Service · 服务条款</a> &middot;
+        <a href="./support.html">Support · 技术支持</a>
+      </p>
+    </footer>
   </div>
 </body>
 </html>
