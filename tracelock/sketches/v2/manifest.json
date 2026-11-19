@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1795056734,
+  "updated_at": "2026-11-19",
+  "item_count": 720,
+  "base_url": "https://roln.github.io/tracelock/sketches/v2/",
+  "metadata_url": "https://roln.github.io/tracelock/sketches/v2/metadata.json",
+  "metadata_hash": "d095fdc223d7",
+  "languages": [
+    "en",
+    "zh-Hans",
+    "zh-Hant",
+    "ja",
+    "ko",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "id",
+    "th",
+    "vi"
+  ],
+  "vectors": {
+    "0": {
+      "file": "vectors/cat0.json",
+      "hash": "72ed33d8e141"
+    },
+    "1": {
+      "file": "vectors/cat1.json",
+      "hash": "0179e25a5b21"
+    },
+    "2": {
+      "file": "vectors/cat2.json",
+      "hash": "020ca38cba51"
+    },
+    "3": {
+      "file": "vectors/cat3.json",
+      "hash": "989e0f80539f"
+    },
+    "4": {
+      "file": "vectors/cat4.json",
+      "hash": "67102097284b"
+    },
+    "5": {
+      "file": "vectors/cat5.json",
+      "hash": "4735b30f18f9"
+    },
+    "6": {
+      "file": "vectors/cat6.json",
+      "hash": "8e17fcac6e97"
+    },
+    "7": {
+      "file": "vectors/cat7.json",
+      "hash": "6cafd283e706"
+    },
+    "8": {
+      "file": "vectors/cat8.json",
+      "hash": "1551de756266"
+    }
+  }
+}

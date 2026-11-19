@@ -1,22 +1,6 @@
 {
-  "version": 1795051897,
+  "version": 1795056734,
   "updated_at": "2026-11-19",
   "item_count": 720,
-  "data_url": "https://roln.github.io/tracelock/sketches/sketches_data.json",
-  "languages": [
-    "en",
-    "zh-Hans",
-    "zh-Hant",
-    "ja",
-    "ko",
-    "es",
-    "fr",
-    "de",
-    "pt",
-    "it",
-    "ru",
-    "id",
-    "th",
-    "vi"
-  ]
+  "data_url": "https://roln.github.io/tracelock/sketches/sketches_data.json"
 }
