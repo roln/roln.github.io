@@ -3,164 +3,327 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perler &amp; Fuse Beads Studio - Official Website</title>
-  <meta name="description" content="Turn any photo into a pixel-perfect fuse bead pattern, and use your iPhone or iPad as a 1:1 physical pegboard lightbox.">
+  <title>Perler &amp; Fuse Beads Studio — 1:1 Physical Pegboard Lightbox &amp; Bead Pattern Maker</title>
+  <meta name="description" content="Convert any photo into crisp Perler, Hama, Artkal, and Mard fuse bead patterns with AI background removal, then place your transparent pegboard directly on your iPad or iPhone screen with exact 1:1 physical 2.6mm / 5.0mm calibration.">
+  <link rel="canonical" href="https://roln.github.io/perlerstudio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Perler &amp; Fuse Beads Studio — 1:1 Pegboard Lightbox &amp; Pattern Maker">
+  <meta property="og:description" content="Photo-to-bead pattern converter, AI background removal, 2.6mm &amp; 5.0mm 1:1 physical screen calibration, Solo Color focus, and touch-proof screen lock.">
+  <meta property="og:url" content="https://roln.github.io/perlerstudio/">
+  <meta property="og:image" content="https://roln.github.io/perlerstudio/assets/promo-poster.jpg">
+  <meta property="og:video" content="https://roln.github.io/perlerstudio/assets/demo.mp4">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Perler &amp; Fuse Beads Studio for iPad &amp; iPhone">
+  <meta name="twitter:description" content="Turn photos into Perler, Artkal &amp; Hama bead patterns and place your real pegboard right on your iPad screen with 1:1 physical alignment.">
+  <meta name="twitter:image" content="https://roln.github.io/perlerstudio/assets/promo-poster.jpg">
+  <link rel="icon" href="./assets/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Perler & Fuse Beads Studio",
+        "alternateName": "BeadPad",
+        "operatingSystem": "iOS, iPadOS",
+        "applicationCategory": "DesignApplication",
+        "url": "https://roln.github.io/perlerstudio/",
+        "downloadUrl": "https://apps.apple.com/app/id6822114274",
+        "image": "https://roln.github.io/perlerstudio/assets/icon.png",
+        "screenshot": [
+          "https://roln.github.io/perlerstudio/assets/screen_01.jpg",
+          "https://roln.github.io/perlerstudio/assets/screen_02.jpg",
+          "https://roln.github.io/perlerstudio/assets/screen_03.jpg",
+          "https://roln.github.io/perlerstudio/assets/screen_04.jpg",
+          "https://roln.github.io/perlerstudio/assets/screen_05.jpg"
+        ],
+        "description": "All-in-one iPad and iPhone workspace for Perler, Hama, Artkal, and Mard fuse bead crafting. Features AI background removal, CIELAB Delta-E pixel quantization, exact 1:1 physical millimeter calibration (2.6mm mini & 5.0mm midi), touch-proof screen lock, Solo Color highlighting, and BOM material checklists.",
+        "featureList": [
+          "Exact 1:1 physical millimeter calibration (2.6mm mini and 5.0mm midi beads)",
+          "On-device AI foreground/background removal",
+          "Single-board (28x28, 52x52) and multi-board interlocking grid calculator",
+          "Touch-proof screen lock for resting palms and transparent pegboards on display",
+          "Solo Color focus mode dimming non-active beads by 90%",
+          "BOM color count checklist for Perler, Artkal, Hama, and Mard kits (24 to 264 colors)",
+          "9 built-in starter pixel templates and blank canvas pixel editor",
+          "A4 PDF printable guide and high-resolution Photos export"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free download with a 5-day full-featured trial; single-board 1:1 lightbox, pixel editor, and starter templates stay free forever; optional one-time Lifetime VIP unlocks multi-board stitching and Solo Color focus."
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MateHub",
+          "url": "https://matehub.net"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Perler & Fuse Beads Studio — 1:1 Physical Pegboard Lightbox Demo",
+        "description": "See how Perler & Fuse Beads Studio converts a photo into a pixel bead pattern and turns an iPad into a 1:1 physical lightbox underneath a transparent pegboard.",
+        "thumbnailUrl": "https://roln.github.io/perlerstudio/assets/promo-poster.jpg",
+        "contentUrl": "https://roln.github.io/perlerstudio/assets/demo.mp4",
+        "uploadDate": "2026-10-28T00:00:00+08:00",
+        "duration": "PT20S"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does 1:1 physical pegboard calibration work on iPad and iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Perler & Fuse Beads Studio detects your exact iPhone or iPad hardware PPI and calculates points per millimeter so each pixel cell renders at exactly 2.60 mm (Mini beads) or 5.00 mm (Midi beads), aligning directly under your transparent acrylic pegboard pins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which fuse bead brands and color palettes are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The app supports Perler, Artkal, Hama, and Mard color palettes across 24, 48, 72, 96, 144, and 264 color tiers, generating an exact BOM bead count checklist per color code."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Perler & Fuse Beads Studio free or a subscription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is free to download with a 5-day full trial. Single-board (1x1) creation, starter templates, blank canvas editing, and basic 1:1 lightbox tracing remain free forever. Multi-board stitching and Solo Color focus can be unlocked with a one-time Lifetime purchase—no recurring subscription and no ads."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
+      --primary: #EC4899;
+      --primary-dark: #DB2777;
+      --accent: #F97316;
       --bg: #0B0F19;
       --surface: #1E293B;
       --surface-border: #334155;
       --text-main: #F8FAFC;
       --text-sub: #94A3B8;
-      --primary: #EC4899;
-      --primary-hover: #DB2777;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; }
-    body {
-      background-color: var(--bg);
-      color: var(--text-main);
-      line-height: 1.7;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.65; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+    header { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.15rem; text-decoration: none; color: #fff; }
+    .logo img { width: 40px; height: 40px; border-radius: 10px; box-shadow: 0 4px 14px rgba(236,72,153,0.4); }
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { color: var(--text-sub); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; }
+
+    .hero { padding: 64px 0 44px; text-align: center; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(236,72,153,0.14); border: 1px solid rgba(236,72,153,0.35); color: #F9A8D4; padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.7rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; line-height: 1.18; }
+    .hero h1 span { background: linear-gradient(135deg, #F472B6, #FB923C, #A78BFA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p.lead { font-size: 1.14rem; color: #E2E8F0; max-width: 740px; margin: 0 auto 10px; }
+    .hero p.sub { font-size: 0.95rem; color: var(--text-sub); max-width: 680px; margin: 0 auto 30px; }
+    .actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; box-shadow: 0 8px 24px rgba(236,72,153,0.38); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(236,72,153,0.5); }
+    .btn-secondary { background: var(--surface); color: var(--text-main); border: 1px solid var(--surface-border); }
+    .btn-secondary:hover { background: #334155; }
+
+    .hero-video { margin-top: 44px; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.6); max-width: 840px; margin-left: auto; margin-right: auto; background: #000; }
+    .hero-video video { width: 100%; display: block; }
+
+    .section { padding: 64px 0; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: 1.95rem; font-weight: 700; margin-bottom: 8px; }
+    .section-title p { color: var(--text-sub); font-size: 1rem; max-width: 680px; margin: 0 auto; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 24px; }
+    .card h3 { font-size: 1.12rem; color: #F472B6; margin-bottom: 8px; font-weight: 700; }
+    .card p { font-size: 0.93rem; color: #CBD5E1; line-height: 1.6; }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .shot-card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; overflow: hidden; }
+    .shot-card img { width: 100%; display: block; aspect-ratio: 16 / 12; object-fit: cover; }
+    .shot-card .cap { padding: 14px 16px; font-size: 0.9rem; color: #CBD5E1; }
+    .shot-card .cap strong { color: #fff; display: block; margin-bottom: 3px; }
+
+    .specs-table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 16px; overflow: hidden; border: 1px solid var(--surface-border); }
+    .specs-table th, .specs-table td { padding: 14px 18px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.93rem; }
+    .specs-table th { color: #F9A8D4; font-weight: 600; width: 28%; background: rgba(255,255,255,0.02); }
+    .specs-table td { color: #CBD5E1; }
+
+    .faq-list { display: grid; gap: 14px; max-width: 820px; margin: 0 auto; }
+    .faq-item { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 14px; padding: 20px 22px; }
+    .faq-item h3 { font-size: 1.02rem; color: #fff; margin-bottom: 6px; }
+    .faq-item p { font-size: 0.92rem; color: #94A3B8; }
+
+    footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 36px 0; text-align: center; color: var(--text-sub); font-size: 0.88rem; }
+    .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+    .footer-links a { color: #CBD5E1; text-decoration: none; }
+    .footer-links a:hover { color: #F472B6; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
     }
-    .hero {
-      background: linear-gradient(135deg, #FF6B95 0%, #EC4899 50%, #8B5CF6 100%);
-      color: #fff;
-      padding: 44px 32px;
-      border-radius: 20px;
-      text-align: center;
-      margin-bottom: 28px;
-      box-shadow: 0 12px 36px rgba(236,72,153,0.3);
-    }
-    .hero h1 { font-size: 32px; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.5px; }
-    .hero p { margin: 0; font-size: 16px; opacity: 0.95; }
-    .badge {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 6px 16px;
-      background: rgba(255,255,255,0.22);
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 600;
-      backdrop-filter: blur(8px);
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      padding: 30px 32px;
-      border-radius: 16px;
-      margin-bottom: 22px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    }
-    h2 { font-size: 20px; color: #fff; margin-top: 0; margin-bottom: 16px; font-weight: 700; }
-    ul { padding-left: 20px; color: #CBD5E1; }
-    li { margin-bottom: 8px; }
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
-    .feature { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px 20px; }
-    .feature h3 { margin: 0 0 8px; font-size: 16px; color: #F472B6; font-weight: 600; }
-    .feature p { margin: 0; font-size: 13.5px; color: #94A3B8; line-height: 1.6; }
-    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-    .links a {
-      display: inline-block;
-      padding: 10px 22px;
-      background: rgba(236,72,153,0.15);
-      border: 1px solid rgba(236,72,153,0.35);
-      color: #F472B6;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      transition: all 0.2s;
-    }
-    .links a:hover {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--primary);
-    }
-    .contact-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      background: rgba(255,255,255,0.03);
-      padding: 16px 20px;
-      border-radius: 12px;
-      margin-top: 10px;
-    }
-    .footer { text-align: center; font-size: 13px; color: var(--text-sub); margin-top: 40px; }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>Perler &amp; Fuse Beads Studio</h1>
-    <p>Any photo &rarr; a pixel-perfect fuse bead pattern, on a real 1:1 physical pegboard lightbox.</p>
-    <div class="badge">✨ 5-day free trial &middot; one-time Lifetime VIP &middot; 100% offline</div>
-  </div>
-
-  <div class="card">
-    <h2>Core Features</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>True 1:1 Physical Lightbox</h3>
-        <p>Calibrates directly to the exact millimeter pitch of 2.6&nbsp;mm (Mini) or 5.0&nbsp;mm (Midi) beads. Place your transparent acrylic board on the screen to craft with zero eye fatigue.</p>
-      </div>
-      <div class="feature">
-        <h3>AI Remove Background</h3>
-        <p>One-tap on-device vision segmentation isolates characters, pets, and anime figures, preventing messy backgrounds from creating dozens of unwanted bead colors.</p>
-      </div>
-      <div class="feature">
-        <h3>Standard &amp; Multi-Board Grids</h3>
-        <p>Supports single square boards (28, 52, or 64 pegs) or X&times;Y multi-board seamless stitch calculations for larger wall-art pieces.</p>
-      </div>
-      <div class="feature">
-        <h3>Solo Color Highlighting</h3>
-        <p>Tap any color swatch to glow just that bead shade at 100% while dimming the rest by 90% &mdash; ideal for assembling complex projects color by color.</p>
-      </div>
-      <div class="feature">
-        <h3>Anti-Mistouch Lock</h3>
-        <p>Rest your hand or place pegboards directly on the screen without canvas shifting. Long-press 1.5&nbsp;seconds to safely unlock.</p>
-      </div>
-      <div class="feature">
-        <h3>Shopping List (BOM) &amp; Export</h3>
-        <p>Auto-tabulates required bead counts mapped to popular palette codes (Artkal, Perler, Hama, Mard). Export HD images or share/print A4 sheets.</p>
-      </div>
+  <header>
+    <div class="container nav">
+      <a href="./" class="logo">
+        <img src="./assets/icon.png" alt="Perler &amp; Fuse Beads Studio App Icon">
+        <span>Perler &amp; Fuse Beads Studio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#specs">Specs &amp; Brands</a>
+        <a href="./guides.html">Guides</a>
+        <a href="./support.html">Support</a>
+        <a href="https://matehub.net/perlerstudio">MateHub</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="card">
-    <h2>Quick 4-Step Creation</h2>
-    <ul>
-      <li><strong>1. Crop:</strong> Pick any photo, zoom, pan, and optionally enable <em>AI Remove Background</em>.</li>
-      <li><strong>2. Setup:</strong> Preview instant bead simulation, pick board size (28/52/64 or multi-board), and select color count.</li>
-      <li><strong>3. Editor:</strong> Fine-tune individual beads with pencil, fill bucket, and color picker tools.</li>
-      <li><strong>4. Export / Lightbox:</strong> Share or print A4 sheets, or place your board on the screen for 1:1 crafting.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Help &amp; Legal Documentation</h2>
-    <div class="links">
-      <a href="support.html">Support &amp; FAQ · 帮助支持</a>
-      <a href="privacy.html">Privacy Policy · 隐私政策</a>
-      <a href="terms.html">Terms of Service · 服务协议</a>
-    </div>
-
-    <div class="contact-row">
-      <div>
-        <div style="font-weight: 600; color: #fff;">Need Developer Support?</div>
-        <div style="font-size: 13px; color: var(--text-sub);">Questions, bug reports, or feature ideas? Email us anytime.</div>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">✨ iPad &amp; iPhone &middot; 1:1 Physical Pegboard Lightbox &middot; 100% On-Device</div>
+      <h1>Turn Any Photo Into <span>1:1 Physical Fuse Bead Patterns</span></h1>
+      <p class="lead">Convert photos with AI background removal, match Perler, Artkal, Hama &amp; Mard color codes, and place your transparent pegboard directly onto your iPad screen for zero-offset beading.</p>
+      <p class="sub">Free download with a 5-day full trial. Single-board 1:1 lightbox, starter templates, and pixel editor stay free forever — optional one-time Lifetime unlock, no subscriptions, no ads.</p>
+      <div class="actions">
+        <a href="https://apps.apple.com/app/id6822114274" target="_blank" rel="noopener" class="btn btn-primary">Download on the App Store ↗</a>
+        <a href="./guides.html" class="btn btn-secondary">Read Step-by-Step Guides</a>
       </div>
-      <div>
-        <a href="mailto:matehubnet@outlook.com?subject=Perler%20Studio%20Inquiry" style="color: #F472B6; font-weight: 600; text-decoration: none;">matehubnet@outlook.com</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    &copy; 2026 Wang Shuai. All rights reserved.<br>
-    Perler&reg;, Artkal&reg;, and Hama&reg; are trademarks of their respective owners.
-  </div>
+      <div class="hero-video">
+        <video controls autoplay muted loop playsinline poster="./assets/promo-poster.jpg">
+          <source src="./assets/demo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-title">
+        <h2>Designed for Real-World Bead Crafting</h2>
+        <p>Every tool bridges digital pixel pattern design with physical pegboard assembly.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>📏 True 1:1 Physical Calibration</h3>
+          <p>Reads your device’s exact hardware PPI to lock each cell to <strong>2.60&nbsp;mm</strong> (Mini beads) or <strong>5.00&nbsp;mm</strong> (Midi beads). Place your acrylic pegboard straight onto the display with zero cumulative drift.</p>
+        </div>
+        <div class="card">
+          <h3>✂️ On-Device AI Remove Background</h3>
+          <p>Apple Vision segmentation isolates anime figures, pets, and portraits on-device—eliminating cluttered backgrounds before pixelation so you don’t waste dozens of extra bead colors.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Solo Color Focus Mode</h3>
+          <p>Holding tweezers with one color? Tap that color pill to glow it at 100% while dimming every other bead by 90%, making it effortless to spot every matching peg.</p>
+        </div>
+        <div class="card">
+          <h3>🔒 Touch-Proof Screen Lock</h3>
+          <p>Rest your palms, wrists, and sliding plastic pegboards freely on the screen. Multi-touch gestures are blocked until you hold the corner unlock ring.</p>
+        </div>
+        <div class="card">
+          <h3>🧩 Single &amp; Multi-Board Grids</h3>
+          <p>Frame inside 28&times;28 or 52&times;52 single square boards, or zoom in Multi-Board mode to auto-calculate X&times;Y interlocking boards for larger wall art.</p>
+        </div>
+        <div class="card">
+          <h3>📋 Brand Color BOM &amp; A4 PDF</h3>
+          <p>Automatically counts exact bead quantities for Perler, Artkal, Hama, and Mard kits (24–264 color tiers), and exports printable A4 PDFs or high-res images.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="section">
+      <div class="section-title">
+        <h2>Inside the Studio</h2>
+        <p>From photo import and pixel editing to 1:1 backlit pegboard assembly on iPad and iPhone.</p>
+      </div>
+      <div class="gallery">
+        <div class="shot-card">
+          <img src="./assets/screen_01.jpg" alt="Perler &amp; Fuse Beads Studio 1:1 physical pegboard lightbox calibration on iPad" loading="lazy">
+          <div class="cap"><strong>1:1 Physical Pegboard Lightbox</strong>Exact 2.6mm and 5.0mm millimeter grid alignment right beneath your real acrylic pegboard.</div>
+        </div>
+        <div class="shot-card">
+          <img src="./assets/screen_02.jpg" alt="4-step photo to bead pattern workflow with AI background removal and multi-board stitching" loading="lazy">
+          <div class="cap"><strong>Photo-to-Pattern &amp; Multi-Board</strong>Aspect-locked crop, AI cutout, CIELAB Delta-E quantization, and multi-board calculation.</div>
+        </div>
+        <div class="shot-card">
+          <img src="./assets/screen_03.jpg" alt="Solo Color Focus highlighting a single bead color while dimming others" loading="lazy">
+          <div class="cap"><strong>Solo Color Highlighting</strong>Isolate one bead shade at a time so you never miss a peg during assembly.</div>
+        </div>
+        <div class="shot-card">
+          <img src="./assets/screen_04.jpg" alt="Touch-proof screen lock preventing accidental palm or pegboard gestures" loading="lazy">
+          <div class="cap"><strong>Touch-Proof Screen Lock</strong>Place your hands and pegboard directly on the screen without shifting the pattern.</div>
+        </div>
+        <div class="shot-card">
+          <img src="./assets/screen_05.jpg" alt="BOM bead material checklist with Perler, Artkal, Hama, and Mard color codes" loading="lazy">
+          <div class="cap"><strong>BOM Material Checklist &amp; Export</strong>Exact bead counts by color code, physical dimensions in cm, and A4 PDF export.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="section">
+      <div class="section-title">
+        <h2>Technical Specifications &amp; Supported Systems</h2>
+      </div>
+      <table class="specs-table">
+        <tbody>
+          <tr><th>Supported Devices</th><td>iPad (iPadOS 16.0+) &amp; iPhone (iOS 16.0+) with hardware PPI auto-detection</td></tr>
+          <tr><th>Physical Bead Sizes</th><td><strong>2.60 mm</strong> Mini Beads (Artkal C / Mard / Hama Mini) &amp; <strong>5.00 mm</strong> Midi Beads (Perler / Hama Midi / Artkal S)</td></tr>
+          <tr><th>Pegboard Grids</th><td>28&times;28 Mini, 52&times;52 Standard, and X&times;Y Multi-Board Interlocking (up to 6&times;6 boards)</td></tr>
+          <tr><th>Supported Bead Brands</th><td>Perler, Artkal, Hama, Mard (24 / 48 / 72 / 96 / 144 / 264 color tiers)</td></tr>
+          <tr><th>Starter Templates</th><td>9 built-in pixel templates (Shiba Puppy, Capybara, Calico Kitten, Boba Tea, Strawberry Cake, Carrot Bunny, Avocado, Rainbow, Mushroom) + 28&times;28 Blank Canvas</td></tr>
+          <tr><th>Privacy &amp; Offline</th><td>100% on-device processing; no account, no ads, no cloud image uploads; optional iCloud sync (off by default)</td></tr>
+          <tr><th>Pricing Model</th><td>Free download + 5-day full trial; single-board 1:1 lightbox free forever; one-time Lifetime VIP unlock</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Does the 1:1 size really match physical 2.6mm and 5.0mm pegboards?</h3>
+          <p>Yes. The engine queries your exact iPad or iPhone model identifier to obtain its native hardware PPI and converts millimeters to exact screen points, keeping every peg aligned from corner to corner.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What happens after the 5-day free trial ends?</h3>
+          <p>You keep full access to your saved single-board patterns, 9 starter templates, blank canvas editor, and 1:1 physical lightbox with touch lock. Only multi-board stitching and Solo Color focus require the optional one-time Lifetime VIP upgrade.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I import images directly from Safari, Photos, or Files?</h3>
+          <p>Yes. You can import from the system Photos picker, share images via the iOS Share/Open-In sheet, or open via the <code>perlerstudio://</code> URL scheme.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="./guides.html">Use-Case Guides</a>
+        <a href="./support.html">Support &amp; FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Use</a>
+        <a href="./llms.txt">llms.txt</a>
+        <a href="https://matehub.net/perlerstudio">MateHub.net</a>
+      </div>
+      <p>&copy; 2026 Perler &amp; Fuse Beads Studio &middot; MateHub. All rights reserved. Contact: <a href="mailto:support@matehub.net" style="color:#F472B6;">support@matehub.net</a></p>
+    </div>
+  </footer>
 </body>
 </html>

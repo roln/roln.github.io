@@ -1,0 +1,28 @@
+# Perler & Fuse Beads Studio (BeadPad)
+
+> iOS & iPadOS app that turns any photo into a pixel-perfect fuse bead pattern and converts your iPad or iPhone into a 1:1 physical millimeter-calibrated pegboard lightbox—place your transparent pegboard directly on the screen and craft with zero eye strain.
+
+## Key Facts
+- **Platform:** iOS & iPadOS (iPhone and iPad, iOS 16.0+)
+- **App Store:** https://apps.apple.com/app/id6822114274
+- **Official Pages:** https://roln.github.io/perlerstudio/ | https://matehub.net/perlerstudio
+- **Category:** Graphics & Design / Lifestyle
+- **Pricing:** Free download with a 5-day full-featured trial. Single-board (1x1) photo conversion, pixel editor, 9 starter templates, blank canvas, and 1:1 physical lightbox with touch-proof lock remain free forever. Optional one-time Lifetime VIP unlocks multi-board stitching and Solo Color focus. No subscription, no ads.
+- **Privacy:** 100% on-device image processing (Vision + CoreImage). No account signup, no cloud photo uploads, no ad tracking. Optional iCloud sync is off by default.
+
+## Core Capabilities
+- **True 1:1 Physical Pegboard Calibration:** Reads the exact hardware PPI of every iPhone and iPad model to lock each pixel cell to **2.60 mm** (Mini beads: Artkal C / Mard / Hama Mini) or **5.00 mm** (Midi standard beads: Perler / Hama Midi / Artkal S), with zero cumulative offset across 28x28 or 52x52 boards.
+- **AI Remove Background:** On-device foreground segmentation isolates pets, anime characters, and portraits from cluttered backgrounds before pixelation.
+- **4-Step Pattern Creation Workflow:** (1) Aspect-locked crop/rotate/flip, (2) Grid size (28x28, 52x52, or auto multi-board) & brand palette quantization (CIELAB Delta-E, Floyd-Steinberg dithering, rare-color merge), (3) Pixel canvas editor (pencil, bucket fill, eyedropper, eraser, noise cleanup, mirror flip, undo/redo), (4) Export to A4 PDF, high-res Photos, or BOM checklist.
+- **Touch-Proof Screen Lock:** Blocks accidental palm resting and sliding acrylic pegboard gestures; requires holding the corner unlock button to exit.
+- **Solo Color Highlighting:** Tap any color code in the lightbox to illuminate only that bead color at 100% while dimming all other colors by 90%.
+- **Brand Color Matching & BOM Recipe:** Matches patterns to **Perler**, **Artkal**, **Hama**, and **Mard** color codes across 24 / 48 / 72 / 96 / 144 / 264 palette tiers, with exact bead counts and physical centimeter dimensions.
+- **9 Built-In Starter Templates & Blank Canvas:** Includes ready-to-craft pixel templates (Shiba Puppy, Capybara, Calico Kitten, Boba Tea, Strawberry Cake, Carrot Bunny, Happy Avocado, Rainbow Cloud, Pixel Mushroom) plus a 28x28 blank canvas mode.
+
+## Canonical Pages
+- Landing Page: https://roln.github.io/perlerstudio/
+- Use-Case Guides & FAQ: https://roln.github.io/perlerstudio/guides.html
+- MateHub Product Page: https://matehub.net/perlerstudio
+- Support & FAQ: https://roln.github.io/perlerstudio/support.html
+- Privacy Policy: https://roln.github.io/perlerstudio/privacy.html
+- Terms of Use: https://roln.github.io/perlerstudio/terms.html

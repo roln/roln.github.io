@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides &amp; Workflows — Perler &amp; Fuse Beads Studio</title>
+  <meta name="description" content="Step-by-step guides for 1:1 physical 2.6mm &amp; 5.0mm pegboard calibration, AI background removal, multi-board fuse bead wall art, and Solo Color assembly.">
+  <link rel="canonical" href="https://roln.github.io/perlerstudio/guides.html">
+  <link rel="icon" href="./assets/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Use Your iPad as a 1:1 Physical Pegboard Lightbox for Fuse Beads",
+    "description": "Convert any photo into a color-matched fuse bead pattern and assemble it directly on top of your iPad screen with 1:1 physical millimeter alignment.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Import Photo or Pick a Starter Template",
+        "text": "Choose a photo from your library, share an image from another app, or tap one of the 9 built-in starter templates. Crop, rotate, or flip the subject."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Remove Background & Quantize Bead Colors",
+        "text": "Enable AI Remove Background to isolate the subject, pick 28x28, 52x52, or Multi-Board grid size, and select your 24–264 bead color palette tier."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Refine Pixels & Check BOM Material List",
+        "text": "Clean stray beads with one tap, fine-tune individual pegs in the pixel editor, and review exact bead counts by Perler, Artkal, Hama, or Mard color codes."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Lock Screen & Bead at 1:1 Physical Scale",
+        "text": "Open the Lightbox, choose 2.6mm Mini or 5.0mm Midi pitch, place your transparent pegboard on the iPad display, lock the screen against palm touches, and use Solo Color focus."
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg: #0B0F19; --surface: #1E293B; --border: #334155; --text: #F8FAFC; --sub: #94A3B8; --pink: #EC4899; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.7; max-width: 920px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
+    header a { color: #CBD5E1; text-decoration: none; font-size: 0.95rem; }
+    header a:hover { color: #F472B6; }
+    h1 { font-size: 2.1rem; font-weight: 800; margin-bottom: 10px; }
+    .lead { color: var(--sub); margin-bottom: 28px; }
+    .guide-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 26px 28px; margin-bottom: 20px; }
+    .guide-card h2 { font-size: 1.25rem; color: #F472B6; margin-bottom: 10px; }
+    .guide-card p, .guide-card li { color: #CBD5E1; font-size: 0.95rem; }
+    .guide-card ul { padding-left: 20px; margin-top: 8px; }
+    .guide-card li { margin-bottom: 6px; }
+    footer { text-align: center; margin-top: 40px; color: var(--sub); font-size: 0.88rem; }
+    footer a { color: #F472B6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./"><strong>&larr; Perler &amp; Fuse Beads Studio</strong></a>
+    <nav style="display:flex; gap:18px;">
+      <a href="./">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./llms.txt">llms.txt</a>
+      <a href="https://apps.apple.com/app/id6822114274" target="_blank" rel="noopener">App Store ↗</a>
+    </nav>
+  </header>
+
+  <h1>Workflow Guides &amp; Best Practices</h1>
+  <p class="lead">Everything you need to know about 1:1 physical pegboard calibration, AI background removal, and multi-board fuse bead projects.</p>
+
+  <article class="guide-card">
+    <h2>1. Calibrating 2.6mm Mini vs. 5.0mm Midi Pegboards</h2>
+    <p>Different fuse bead brands use two industry-standard peg spacings:</p>
+    <ul>
+      <li><strong>2.60 mm (Mini Beads):</strong> Used by Artkal C-series, Mard 2.6mm, and Hama Mini. A standard 52&times;52 pegboard measures ~13.5 &times; 13.5 cm and fits comfortably on any iPad display.</li>
+      <li><strong>5.00 mm (Midi Standard Beads):</strong> Used by Perler, Hama Midi, and Artkal S-series. A 29&times;29 / 28&times;28 board measures ~14.0 &times; 14.0 cm.</li>
+      <li><strong>Zero-Drift Alignment:</strong> Tap <code>2.6</code> or <code>5.0</code> at the bottom of the Lightbox to lock 1:1 physical scale based on your device’s hardware PPI.</li>
+    </ul>
+  </article>
+
+  <article class="guide-card">
+    <h2>2. Clean Photo-to-Pattern Conversion with AI Background Removal</h2>
+    <p>Converting raw photos directly often turns walls, shadows, and furniture into dozens of unwanted bead colors.</p>
+    <ul>
+      <li>Toggle <strong>AI Remove Background</strong> in Step 2 to isolate characters, pets, or portraits cleanly on-device.</li>
+      <li>Enable <strong>CIELAB Delta-E</strong> color matching and <strong>Merge Rare Colors</strong> to consolidate 1–2 bead outliers into their nearest neighbor shade.</li>
+      <li>Use <strong>Clean Noise</strong> in the Step 3 pixel editor to remove isolated stray pixels with one tap.</li>
+    </ul>
+  </article>
+
+  <article class="guide-card">
+    <h2>3. Assembling Multi-Board Wall Art (X&times;Y Boards)</h2>
+    <p>Switch to <strong>Multi-Board</strong> mode in Step 2 when crafting large portraits or landscapes. Zooming automatically calculates how many interlocking 28&times;28 or 52&times;52 boards are needed (up to 6&times;6). Inside the Lightbox, tap any board tile in the board switcher to center and lock that exact section under your physical board.</p>
+  </article>
+
+  <article class="guide-card">
+    <h2>4. Fast, Mistake-Free Beading with Solo Color &amp; Touch Lock</h2>
+    <p>Activate <strong>Lock Screen</strong> before resting your pegboard and wrists on the glass. Tap any color pill in the bottom tray to turn on <strong>Solo Color Focus</strong>—only pegs of that color stay lit while the rest dim by 90%, cutting assembly time and preventing missed beads.</p>
+  </article>
+
+  <footer>
+    <p><a href="./">Back to Home</a> &middot; <a href="./support.html">Support</a> &middot; <a href="https://matehub.net/perlerstudio">MateHub.net</a></p>
+  </footer>
+</body>
+</html>
