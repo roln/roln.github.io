@@ -3,8 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support & FAQ · 技术支持与常见问题 - TraceLock</title>
+  <title>Support &amp; FAQ - TraceLock: Tracing Lightbox</title>
+  <meta name="description" content="Frequently asked questions and support guide for TraceLock: how to turn an iPad or iPhone into a touch-locked tracing lightbox, recommended paper, line-art extraction, pricing, and privacy.">
+  <link rel="canonical" href="https://roln.github.io/tracelock/support.html">
   <link rel="icon" href="./assets/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I lock the screen and safely unlock it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After importing and framing your image, tap the orange Lock button in the top toolbar. The interface enters full-screen lock and stays awake at maximum brightness. To unlock, long-press the floating unlock button at the top-right for 2 seconds until the countdown ring completes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What paper is recommended for tracing on an iPad or iPhone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard 70g or 80g A4 copy/printer paper, lightweight sketch paper, tracing paper, or vellum works well because TraceLock boosts display brightness to maximum in lock mode."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I extract clear lines from busy or dark photos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the Sketch filter for portraits and shaded photos, or the Outline filter for anime, cartoons, and clean contours. Tap the active filter to open the vertical slider on the right and adjust line weight and sensitivity in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my drawing state be preserved if I switch apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. TraceLock persists your selected image, zoom/pan/rotation transform, and filter parameters locally so reopening the app restores your exact setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does TraceLock require internet access or have hidden charges?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Image importing, filtering, and tracing happen entirely on-device with no internet required and zero photo uploads. New users get a 5-day full-featured free trial with no ads and no automatic subscriptions; basic import, framing, and line-art tools stay free forever, and an optional one-time Lifetime Purchase unlocks touch-proof lock, A4 print/PDF export, and high-res export."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I generate A4 printable coloring sheets and showcase my artwork?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tap A4 Print in the gallery to arrange single or 2x2 / 3x3 grid layouts with synchronized pan/zoom and print via AirPrint or export PDF. After finishing on paper, use the camera alignment tool to create a side-by-side showcase card locally on your device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I turn an iPad or iPhone into a tracing lightbox without the screen moving?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Import your image into TraceLock, scale and position it to match your paper, then tap Lock. TraceLock intercepts palm and paper touches across the canvas and requires a 2-second hold on the unlock button to exit, preventing accidental zoom or pan while tracing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use TraceLock for tattoo stencils, calligraphy, anime line art, or kids drawing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. TraceLock supports horizontal mirror flip and 90-degree rotation for tattoo stencil prep, high-contrast outlines for anime and manga, grid/A4 print layouts for calligraphy and bullet journaling, and simple line extraction for kids coloring and tracing practice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does TraceLock compare to a physical LED light pad or AR camera tracing apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike a physical LED light pad, TraceLock needs no printed reference sheets because it displays, scales, mirrors, and converts any digital photo into line art directly on your iPad or iPhone. Unlike AR camera tracing apps that require a stand and steady lighting, you lay paper flat on the screen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does TraceLock require a subscription, account signup, or cloud upload?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. TraceLock requires no account, contains no ads, processes all photos locally on your device, and uses an optional one-time Lifetime Purchase rather than a recurring subscription."
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --bg: #0B0F19;
@@ -20,29 +110,31 @@
     body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
     .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
     header { padding: 20px 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 36px; }
-    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
     .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; color: #fff; text-decoration: none; font-size: 1.15rem; }
     .logo img { width: 32px; height: 32px; border-radius: 8px; }
-    .back { color: var(--primary); text-decoration: none; font-size: 0.95rem; }
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .nav-links a { color: #A5B4FC; text-decoration: none; font-size: 0.92rem; }
+    .nav-links a:hover { color: #fff; }
     .content { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 36px; }
-    h1 { font-size: 2.1rem; margin-bottom: 4px; color: #FFFFFF; font-weight: 800; }
-    .h1-cn { font-size: 1.25rem; color: #A5B4FC; margin-bottom: 16px; font-weight: 600; }
+    h1 { font-size: 2.05rem; margin-bottom: 4px; color: #FFFFFF; font-weight: 800; }
+    .h1-cn { font-size: 1.15rem; color: #A5B4FC; margin-bottom: 16px; font-weight: 600; }
     .meta { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 28px; border-bottom: 1px solid var(--surface-border); padding-bottom: 16px; }
-    
+
     .faq-item { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-q { font-size: 1.15rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 8px; }
-    .faq-q span { color: var(--primary); font-size: 1.15rem; line-height: 1.3; }
-    .faq-q-cn { font-size: 0.96rem; font-weight: 500; color: #818CF8; margin-left: 32px; margin-bottom: 10px; }
-    .faq-a-en { color: #F1F5F9; font-size: 0.96rem; line-height: 1.65; margin-bottom: 8px; margin-left: 32px; }
-    .faq-a-cn { color: var(--text-cn); font-size: 0.88rem; line-height: 1.55; margin-left: 32px; }
-    
-    .contact-card { background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .faq-item:last-of-type { border-bottom: none; }
+    .faq-q { font-size: 1.12rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 8px; }
+    .faq-q span { color: var(--primary); font-size: 1.12rem; line-height: 1.3; min-width: 30px; }
+    .faq-q-cn { font-size: 0.94rem; font-weight: 500; color: #818CF8; margin-left: 38px; margin-bottom: 10px; }
+    .faq-a-en { color: #F1F5F9; font-size: 0.95rem; line-height: 1.65; margin-bottom: 8px; margin-left: 38px; }
+    .faq-a-cn { color: var(--text-cn); font-size: 0.88rem; line-height: 1.55; margin-left: 38px; }
+
+    .contact-card { background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 24px; margin-top: 28px; }
     .contact-card h3 { font-size: 1.2rem; color: #fff; margin-bottom: 4px; font-weight: 700; }
-    .contact-card .card-cn { font-size: 0.96rem; color: #A5B4FC; margin-bottom: 12px; }
+    .contact-card .card-cn { font-size: 0.95rem; color: #A5B4FC; margin-bottom: 12px; }
     .contact-card p.en { color: #F1F5F9; font-size: 0.94rem; margin-bottom: 4px; }
     .contact-card p.cn { color: var(--text-cn); font-size: 0.88rem; margin-bottom: 16px; }
-    .contact-btn { display: inline-block; background: var(--primary); color: #fff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+    .contact-btn { display: inline-block; background: var(--primary); color: #fff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.92rem; margin-right: 10px; }
     .contact-btn:hover { background: #4F46E5; }
     footer { text-align: center; margin-top: 40px; color: var(--text-sub); font-size: 0.85rem; }
   </style>
@@ -55,25 +147,28 @@
           <img src="./assets/icon.png" alt="TraceLock icon">
           <span>TraceLock</span>
         </a>
-        <a href="./index.html" class="back">← Home · 首页</a>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./guides.html">Use-Case Guides</a>
+          <a href="https://apps.apple.com/app/id6816664937" target="_blank" rel="noopener">App Store</a>
+        </div>
       </div>
     </header>
 
     <div class="content">
-      <h1>Support & Frequently Asked Questions (FAQ)</h1>
+      <h1>Support &amp; Frequently Asked Questions (FAQ)</h1>
       <div class="h1-cn">技术支持与常见问题</div>
-      <div class="meta">Official Support & User Guide | 官方技术支持 · 帮助指南</div>
+      <div class="meta">Official Support &amp; User Guide for TraceLock: Tracing Lightbox (iPad &amp; iPhone)</div>
 
       <div class="faq-item">
         <div class="faq-q"><span>Q1</span> How do I lock the screen and safely unlock it?</div>
         <div class="faq-q-cn">如何使用防误触锁屏与安全解锁？</div>
         <div class="faq-a-en">
-          After importing and framing your image, tap the orange <strong>"🔒 Lock"</strong> button in the top toolbar. The interface enters full-screen lock and stays awake with maximum brightness.<br>
-          <strong>To unlock:</strong> <strong>Long-press the button at top-right for 2 seconds</strong> until the animated countdown ring completes to unlock and restore tools.
+          After importing and framing your image, tap the orange <strong>"Lock"</strong> button in the top toolbar. The interface enters full-screen lock and stays awake at maximum brightness.<br>
+          <strong>To unlock:</strong> <strong>Long-press the floating button at top-right for 2 seconds</strong> until the animated countdown ring completes to unlock and restore tools.
         </div>
         <div class="faq-a-cn">
-          导入图片并调整到满意的位置后，点击顶部工具栏橙色的<strong>「🔒 锁屏」</strong>按钮，屏幕将立即全屏锁定并进入最高亮度。<br>
-          <strong>如何解锁：</strong> 在屏幕右上角的悬浮解锁按钮上<strong>长按 2 秒</strong>（带红色进度圆环倒计时完成动画）即可解除锁定并恢复原有工具栏。
+          导入图片并调整到满意的位置后，点击顶部工具栏橙色的<strong>「🔒 锁屏」</strong>按钮，屏幕将立即全屏锁定并进入最高亮度。长按右上角悬浮解锁按钮 <strong>2 秒</strong>即可安全解锁。
         </div>
       </div>
 
@@ -81,12 +176,10 @@
         <div class="faq-q"><span>Q2</span> What paper is recommended for tracing?</div>
         <div class="faq-q-cn">垫纸描摹有什么推荐纸张与技巧？</div>
         <div class="faq-a-en">
-          Standard <strong>70g or 80g A4 copy/printer paper</strong>, lightweight sketch paper, tracing paper, or vellum works great.<br>
-          Because TraceLock boosts screen brightness to the maximum in lock mode, normal paper will clearly show lines underneath in typical room lighting.
+          Standard <strong>70g or 80g A4 copy/printer paper</strong>, lightweight sketch paper, tracing paper, or vellum works great. Because TraceLock boosts screen brightness to the maximum in lock mode, normal paper clearly shows lines underneath in typical room lighting.
         </div>
         <div class="faq-a-cn">
-          推荐使用普通的 <strong>70g 或 80g A4 复印打印纸</strong>、薄素描纸、拷贝纸或硫酸纸。<br>
-          由于应用在锁屏状态会自动将屏幕亮度调至最大，在暗光或普通室内光线环境下，普通白纸能非常清晰地透出屏幕上的素描线稿。
+          推荐使用普通的 <strong>70g 或 80g A4 复印打印纸</strong>、薄素描纸、拷贝纸或硫酸纸。锁屏状态会自动将屏幕亮度调至最大，普通室内光线下即可清晰透出线稿。
         </div>
       </div>
 
@@ -95,15 +188,12 @@
         <div class="faq-q-cn">照片太黑、背景太花，怎么转成清晰线稿？</div>
         <div class="faq-a-en">
           Use the <strong>"Sketch"</strong> or <strong>"Outline"</strong> filter in the bottom bar:<br>
-          • <strong>"Sketch"</strong>: Ideal for portraits, landscapes, and photos with rich shading, yielding pencil-like textures.<br>
+          • <strong>"Sketch"</strong>: Ideal for portraits, landscapes, and photos with rich shading.<br>
           • <strong>"Outline"</strong>: Best for anime, cartoons, and object contours, eliminating gradients and keeping clean outlines.<br>
-          Tap the active filter to reveal the <strong>vertical purple slider</strong> on the right to fine-tune line weight and sensitivity in real time!
+          Tap the active filter to reveal the <strong>vertical slider</strong> on the right to fine-tune line weight and sensitivity in real time.
         </div>
         <div class="faq-a-cn">
-          在底部滤镜栏中推荐使用<strong>「素描」</strong>或<strong>「轮廓」</strong>功能：<br>
-          • <strong>「素描」</strong>：适合人像、风景和带光影的复杂照片，保留丰富铅笔线条；<br>
-          • <strong>「轮廓」</strong>：适合动漫人物、简笔画及物体边界，能消灭杂色只留下纯黑外框。<br>
-          点击选中的滤镜后，右侧会弹出<strong>紫色上下滑杆</strong>，上下滑动即可实时调整线条粗细与深浅！
+          在底部滤镜栏中使用<strong>「素描」</strong>或<strong>「轮廓」</strong>功能，并点击选中的滤镜调出右侧<strong>上下滑杆</strong>实时调节线条粗细与深浅。
         </div>
       </div>
 
@@ -111,10 +201,10 @@
         <div class="faq-q"><span>Q4</span> Will my drawing state be preserved if I switch apps?</div>
         <div class="faq-q-cn">切换到其他应用再回来，之前的图片还在吗？</div>
         <div class="faq-a-en">
-          Yes! TraceLock features <strong>full session state persistence</strong>. Even if you switch to other apps or the OS clears the background process, reopening TraceLock restores your image, zoom/pan transform, and filter settings seamlessly.
+          Yes. TraceLock features <strong>full session state persistence</strong>. Even if you switch to other apps or iOS/iPadOS clears the background process, reopening TraceLock restores your image, zoom/pan/rotation transform, and filter settings seamlessly.
         </div>
         <div class="faq-a-cn">
-          在的！临摹板具备<strong>全状态持久化保护</strong>。即使切换到相机、其他应用，或者后台被系统回收，重新打开应用会自动无缝复原上次选择的图片、位置缩放大小与滤镜参数，无需重新选图。
+          在的。应用会自动在本地持久化保存图片、缩放/平移/旋转构图和滤镜参数，切出后回来可无缝继续。
         </div>
       </div>
 
@@ -122,16 +212,13 @@
         <div class="faq-q"><span>Q5</span> Does TraceLock require internet access or have hidden charges?</div>
         <div class="faq-q-cn">应用需要联网吗？收费机制是怎样的？</div>
         <div class="faq-a-en">
-          Importing, filtering, and tracing happen entirely on your device with no network connection required and zero photo uploads. An App Store connection is only used when loading localized prices, purchasing, or restoring purchases.<br>
+          Importing, filtering, and tracing happen entirely on your device with no network connection required and zero photo uploads.<br>
           • <strong>Free Trial:</strong> New users enjoy a full-featured <strong>5-day free trial</strong> with no ads and no automatic subscriptions.<br>
-          • <strong>Freemium Policy:</strong> After the trial, basic photo import, composition adjustments, and line-art filter conversion remain <strong>free forever</strong>.<br>
-          • <strong>Lifetime VIP:</strong> Advanced features (touch-proof screen lock, A4 coloring sheet export/print, high-res export) can be unlocked with an optional <strong>one-time Lifetime Purchase</strong>. No recurring subscriptions. Local prices and currencies are displayed by the App Store.
+          • <strong>Free Forever Core:</strong> After the trial, basic photo import, composition adjustments, and line-art conversion remain <strong>free forever</strong>.<br>
+          • <strong>Lifetime Purchase:</strong> Touch-proof screen lock, A4 sheet export/print, and high-res export can be unlocked with an optional <strong>one-time Lifetime Purchase</strong>—no recurring subscriptions.
         </div>
         <div class="faq-a-cn">
-          图片导入、构图与滤镜提取完全在设备本机离线完成，无需联网，更绝不会上传您的照片。仅在首次加载本地化商品价格、购买永久版或恢复购买时需要连接 Apple App Store。<br>
-          • <strong>免费试用：</strong> 新用户享受 <strong>5 天全功能免费试用</strong>，无广告、无需绑定自动续费；<br>
-          • <strong>基础功能永久免费：</strong> 试用期结束后，选图导入、自由缩放平移、构图调整以及转换为素描/轮廓线稿等核心工具<strong>永久免费使用</strong>；<br>
-          • <strong>一次买断永久版：</strong> 仅在开启防误触锁屏透写、A4 练习纸打印与 PDF 导出、高精线稿保存等进阶功能时，可自主选择<strong>一次性买断永久版</strong>，终身使用，没有订阅、没有自动扣费。实际价格以 App Store 当地标价为准。
+          所有图片处理均在设备本地离线完成。新用户享有 <strong>5 天全功能免费试用</strong>（无广告、无自动续费）；基础选图、构图与线稿转换<strong>永久免费</strong>；锁屏透写、A4 打印/PDF 导出等进阶功能可通过<strong>一次性买断永久版</strong>解锁。
         </div>
       </div>
 
@@ -139,29 +226,73 @@
         <div class="faq-q"><span>Q6</span> How do I generate A4 printable coloring sheets and showcase my artwork?</div>
         <div class="faq-q-cn">如何生成 A4 打印练习纸，以及进行临摹打卡？</div>
         <div class="faq-a-en">
-          • <strong>A4 Printable Sheets:</strong> Tap the "A4 Print" button in the gallery to generate standard A4 coloring sheets with single or multi-grid layouts, supporting synchronized zoom, pan, and direct AirPrint or PDF sharing.<br>
-          • <strong>Artwork Showcase:</strong> After finishing your drawing on paper, tap the camera button to align and photograph your paper artwork side-by-side with the digital sketch, generating an elegant verification showcase card. Camera access is strictly on-device.
+          • <strong>A4 Printable Sheets:</strong> Tap "A4 Print" in the gallery to generate standard A4 sheets with single or 2×2 / 3×3 grid layouts, synchronized zoom/pan, and AirPrint or PDF export.<br>
+          • <strong>Artwork Showcase:</strong> Use the camera alignment tool to photograph your finished paper drawing side-by-side with the digital sketch—processed strictly on-device.
         </div>
         <div class="faq-a-cn">
-          • <strong>A4 练习纸打印与导出：</strong> 在作品库或工具栏中点击「A4 练习纸」，可自由排版单张或 2×2 / 3×3 多图网格，多图支持同步缩放与拖动，一键直连 AirPrint 打印或导出高清 PDF；<br>
-          • <strong>画作成品打卡：</strong> 在纸上临摹完成后，点击「打卡」拍照功能，通过相机将手绘画作与数字底稿并排对齐拍照，自动生成精致的临摹打卡海报。相机调用完全在本地处理，保护您的创作隐私。
+          在作品库点击「A4 练习纸」即可排版打印或导出 PDF；临摹完成后可用本地相机对齐底稿生成打卡对比卡片。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Q7</span> How do I turn an iPad or iPhone into a tracing lightbox without the screen moving?</div>
+        <div class="faq-q-cn">如何把 iPad / iPhone 当作透写台且防止手掌或纸张滑动画布？</div>
+        <div class="faq-a-en">
+          Import your reference image into TraceLock, zoom and rotate it to match your paper, and tap <strong>Lock</strong>. TraceLock intercepts palm resting and paper sliding gestures across the entire screen, keeps the display awake at full brightness, and only unlocks when you hold the unlock ring for 2 seconds.
+        </div>
+        <div class="faq-a-cn">
+          导入图片并调整好比例后点击「锁屏」，TraceLock 会拦截手掌和纸张误触并保持常亮高亮度，必须长按解锁按钮 2 秒才会退出锁定。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Q8</span> Can I use TraceLock for tattoo stencils, calligraphy, anime line art, or kids' drawing?</div>
+        <div class="faq-q-cn">能用于纹身转印稿、英文书法、动漫线稿或儿童描红吗？</div>
+        <div class="faq-a-en">
+          Yes. Creators use TraceLock across multiple workflows: <strong>horizontal mirror flip</strong> and 90° rotation for tattoo stencil prep, the <strong>Outline</strong> filter for clean anime and manga line art, <strong>A4 grid layouts</strong> for calligraphy and bullet journal practice, and simple line extraction for kids' tracing sheets. See our <a href="./guides.html" style="color: #A5B4FC;">Use-Case Guides</a> for step-by-step tips.
+        </div>
+        <div class="faq-a-cn">
+          可以。支持水平镜像与旋转（适合纹身转印底稿）、轮廓提取（适合动漫线稿与儿童描红）、以及 A4 多图网格导出（适合书法与手帐练习）。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Q9</span> How does TraceLock compare to a physical LED light pad or AR camera tracing apps?</div>
+        <div class="faq-q-cn">和实体 LED 拷贝台或 AR 相机临摹 App 相比有什么区别？</div>
+        <div class="faq-a-en">
+          Unlike a physical LED light pad, TraceLock doesn't require printing a reference sheet first—you can zoom, crop, mirror, and convert any photo into clean line art directly on your iPad or iPhone. Unlike AR camera tracing apps that need a phone stand and careful lighting, TraceLock lets you lay paper flat on the screen and draw comfortably.
+        </div>
+        <div class="faq-a-cn">
+          相比实体透写台，不需要先打印底稿即可直接缩放、镜像和转线稿；相比 AR 投影类 App，不需要支架和特定环境光，直接把纸铺在屏幕上就能画。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span>Q10</span> Does TraceLock require a subscription, account signup, or cloud upload?</div>
+        <div class="faq-q-cn">需要注册账号、订阅扣费或上传照片到云端吗？</div>
+        <div class="faq-a-en">
+          No. TraceLock requires <strong>no account signup</strong>, shows <strong>no ads</strong>, processes every photo <strong>100% locally on your device</strong>, and offers an optional <strong>one-time Lifetime Purchase</strong> instead of a recurring subscription.
+        </div>
+        <div class="faq-a-cn">
+          都不需要。无需账号、无广告、所有照片仅在本地处理，且采用一次买断制，没有订阅。
         </div>
       </div>
 
       <div class="contact-card">
         <h3>Need More Help or Have Feedback?</h3>
         <div class="card-cn">还需要更多帮助或有建议？</div>
-        <p class="en">We value your experience. If you encounter bugs, have feature requests, or need assistance, feel free to reach out:</p>
-        <p class="cn">我们非常重视您的体验。如果您遇到偶发问题、新功能建议或有其他疑问，欢迎直接联系支持团队：</p>
-        <p class="en">Email / 电子邮箱: <strong>matehubnet@outlook.com</strong></p>
-        <div style="margin-top: 12px;">
-          <a href="mailto:matehubnet@outlook.com?subject=TraceLock%20Support%20Feedback" class="contact-btn">Send Email · 发送邮件</a>
+        <p class="en">If you encounter bugs, have feature requests, or need assistance, feel free to reach out:</p>
+        <p class="cn">如果您遇到问题或有功能建议，欢迎联系支持团队：</p>
+        <p class="en">Email: <strong>matehubnet@outlook.com</strong></p>
+        <div style="margin-top: 14px;">
+          <a href="mailto:matehubnet@outlook.com?subject=TraceLock%20Support%20Feedback" class="contact-btn">Send Email</a>
+          <a href="https://apps.apple.com/app/id6816664937" target="_blank" rel="noopener" class="contact-btn" style="background: #334155;">Open in App Store</a>
         </div>
       </div>
     </div>
 
     <footer>
-      &copy; 2026 TraceLock · Stay Pure, Built for Creators | 保持纯净，为创作者服务
+      &copy; 2026 TraceLock · Built for Creators
     </footer>
   </div>
 </body>

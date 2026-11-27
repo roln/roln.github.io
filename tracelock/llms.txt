@@ -1,0 +1,30 @@
+# TraceLock: Tracing Lightbox
+
+> iOS & iPadOS app that turns any iPhone or iPad into a touch-locked digital tracing lightbox—import a photo, extract clean line art on-device, lock the screen against palm and paper touches, place physical paper on top, and trace.
+
+## Key Facts
+- **Platform:** iOS & iPadOS (iPhone and iPad)
+- **App Store:** https://apps.apple.com/app/id6816664937
+- **Website:** https://roln.github.io/tracelock/
+- **Pricing:** Free download with a 5-day full-featured free trial; basic photo import, framing, and line-art conversion remain free forever; optional one-time Lifetime Purchase unlocks touch-proof screen lock, A4 print/PDF export, and high-res export. No subscription, no ads.
+- **Privacy:** 100% on-device image processing. No account signup, no cloud photo uploads, no third-party tracking SDKs.
+
+## Core Capabilities
+- **Touch-Proof Screen Lock:** Intercepts accidental palm resting and sliding paper gestures; requires a 2-second hold on the floating unlock ring to exit.
+- **Max Brightness & Keep Awake:** Automatically sets screen brightness to maximum and prevents auto-lock while tracing through 70g–80g copy paper, sketch paper, or vellum.
+- **Line-Art & Sketch Extraction:** Difference of Gaussians (DoG) Outline, Color Dodge Sketch, Comic, Black & White, and High Contrast filters with a real-time vertical slider for line weight and sensitivity.
+- **Canvas Framing:** Pinch-to-zoom, pan, 90-degree rotation, and horizontal mirror flip, with automatic local session state persistence.
+- **A4 Print & Artwork Showcase:** Single or 2x2 / 3x3 grid A4 layouts for AirPrint or PDF export, plus local camera alignment to create side-by-side showcase cards.
+
+## Common Use Cases
+- Turning an iPad or iPhone into a portable tracing lightbox / light table
+- Extracting clean outlines from photos for sketching, anime, manga, and portraits
+- Preparing tattoo stencils with horizontal mirror flip and high-contrast line extraction
+- Practicing calligraphy, hand lettering, and bullet journal layouts on real paper
+- Creating printable A4 coloring and tracing sheets for kids
+
+## Canonical Pages
+- Landing Page: https://roln.github.io/tracelock/
+- Use-Case Guides: https://roln.github.io/tracelock/guides.html
+- Support & FAQ: https://roln.github.io/tracelock/support.html
+- Privacy Policy: https://roln.github.io/tracelock/privacy.html

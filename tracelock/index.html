@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>临摹板 (TraceLock) - 电子透写台 · 锁屏防误触 | Digital Lightbox & Tracing Board</title>
-  <meta name="description" content="把手机与平板秒变专业电子透写台！一键锁屏绝对防误触，高清线稿素描智能提取，垫上A4纸轻松学画画。Turn your tablet or phone into a professional tracing lightbox with touch-proof lock and line-art extraction.">
+  <title>TraceLock: Tracing Lightbox for iPad &amp; iPhone — Touch-Locked Light Table App</title>
+  <meta name="description" content="Turn any iPad or iPhone into a touch-locked tracing lightbox. Extract clean line art from photos, lock the screen against palm and paper touches, keep full brightness, and trace on real paper. No account, no ads, no subscription.">
+  <link rel="canonical" href="https://roln.github.io/tracelock/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TraceLock: Tracing Lightbox for iPad &amp; iPhone">
+  <meta property="og:description" content="Import a photo, convert it to clean line art, lock the screen against accidental touches, place paper on top, and trace. Optional one-time lifetime unlock with no subscription.">
+  <meta property="og:url" content="https://roln.github.io/tracelock/">
+  <meta property="og:image" content="https://roln.github.io/tracelock/assets/splash.png">
   <link rel="icon" href="./assets/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TraceLock: Tracing Lightbox",
+    "operatingSystem": "iOS, iPadOS",
+    "applicationCategory": "GraphicsApplication",
+    "url": "https://roln.github.io/tracelock/",
+    "downloadUrl": "https://apps.apple.com/app/id6816664937",
+    "image": "https://roln.github.io/tracelock/assets/icon.png",
+    "description": "Turn any iPhone or iPad into a touch-locked digital tracing lightbox. Extract clean line art or pencil sketches on-device, lock the screen against palm and paper touches, maximize brightness, and trace onto physical paper.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free download with a 5-day full-featured trial; basic import, framing, and line-art filters remain free forever, with an optional one-time Lifetime Purchase (no subscription)."
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Wang Shuai"
+    }
+  }
+  </script>
   <style>
     :root {
       --primary: #6366F1;
@@ -15,59 +44,55 @@
       --surface-border: #334155;
       --text-main: #F8FAFC;
       --text-sub: #94A3B8;
-      --text-en: #A1A1AA;
       --accent: #F59E0B;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
-    body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.65; }
     .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-    
-    /* Header */
+
     header { padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .nav { display: flex; justify-content: space-between; align-items: center; }
-    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.25rem; text-decoration: none; color: #fff; }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.2rem; text-decoration: none; color: #fff; }
     .logo img { width: 38px; height: 38px; border-radius: 9px; box-shadow: 0 4px 12px rgba(99,102,241,0.4); }
-    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
     .nav-links a { color: var(--text-sub); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
     .nav-links a:hover { color: #fff; }
 
-    /* Hero */
-    .hero { padding: 70px 0 50px; text-align: center; }
-    .badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #A5B4FC; padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 24px; }
-    .hero h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; line-height: 1.25; }
+    .hero { padding: 68px 0 48px; text-align: center; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #A5B4FC; padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 22px; }
+    .hero h1 { font-size: 2.75rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; line-height: 1.2; }
     .hero h1 span { background: linear-gradient(135deg, #818CF8, #C084FC, #F472B6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero-h1-en { font-size: 1.45rem; font-weight: 600; color: #CBD5E1; margin-bottom: 20px; }
-    .hero p.cn { font-size: 1.15rem; color: #E2E8F0; max-width: 720px; margin: 0 auto 6px; }
-    .hero p.en { font-size: 0.98rem; color: var(--text-sub); max-width: 720px; margin: 0 auto 34px; }
-    .actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .hero p.lead { font-size: 1.12rem; color: #E2E8F0; max-width: 720px; margin: 0 auto 10px; }
+    .hero p.sub { font-size: 0.95rem; color: var(--text-sub); max-width: 680px; margin: 0 auto 32px; }
+    .actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
     .btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; box-shadow: 0 8px 24px rgba(79,70,229,0.4); }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(79,70,229,0.5); }
     .btn-secondary { background: var(--surface); color: var(--text-main); border: 1px solid var(--surface-border); }
     .btn-secondary:hover { background: #334155; }
 
-    /* Preview Card */
-    .hero-img { margin-top: 50px; position: relative; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.6); max-width: 720px; margin-left: auto; margin-right: auto; }
+    .hero-img { margin-top: 48px; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.6); max-width: 720px; margin-left: auto; margin-right: auto; }
     .hero-img img { width: 100%; display: block; }
 
-    /* Features */
-    .features { padding: 80px 0; }
-    .section-title { text-align: center; margin-bottom: 50px; }
-    .section-title h2 { font-size: 2.1rem; font-weight: 700; margin-bottom: 6px; }
-    .section-title h3 { font-size: 1.25rem; font-weight: 500; color: #A5B4FC; margin-bottom: 12px; }
-    .section-title p { color: var(--text-sub); font-size: 1rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-    .card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 26px; transition: transform 0.2s; }
-    .card:hover { transform: translateY(-4px); }
-    .card-icon { font-size: 2rem; margin-bottom: 14px; }
-    .card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 2px; }
-    .card h4 { font-size: 0.95rem; font-weight: 500; color: #818CF8; margin-bottom: 10px; }
-    .card p.cn { color: #E2E8F0; font-size: 0.93rem; line-height: 1.6; margin-bottom: 8px; }
-    .card p.en { color: var(--text-sub); font-size: 0.86rem; line-height: 1.5; }
+    .section { padding: 72px 0; }
+    .section-title { text-align: center; margin-bottom: 44px; }
+    .section-title h2 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .section-title p { color: var(--text-sub); font-size: 1rem; max-width: 680px; margin: 0 auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; }
+    .card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 24px; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card-icon { font-size: 1.85rem; margin-bottom: 12px; }
+    .card h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 8px; color: #fff; }
+    .card p { color: #CBD5E1; font-size: 0.92rem; line-height: 1.6; }
 
-    /* Footer */
+    .summary-box { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 16px; padding: 28px; margin-top: 40px; }
+    .summary-box h3 { font-size: 1.25rem; margin-bottom: 12px; color: #fff; }
+    .summary-box ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 24px; }
+    .summary-box li { color: #CBD5E1; font-size: 0.93rem; }
+    .summary-box strong { color: #A5B4FC; }
+
     footer { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: var(--text-sub); font-size: 0.88rem; }
-    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 14px; flex-wrap: wrap; }
     .footer-links a { color: var(--text-sub); text-decoration: none; }
     .footer-links a:hover { color: #fff; }
   </style>
@@ -77,105 +102,88 @@
     <div class="container nav">
       <a href="./index.html" class="logo">
         <img src="./assets/icon.png" alt="TraceLock icon">
-        <span>临摹板 · TraceLock</span>
+        <span>TraceLock</span>
       </a>
       <nav class="nav-links">
-        <a href="./support.html">技术支持 · Support</a>
-        <a href="./privacy.html">隐私政策 · Privacy</a>
-        <a href="./terms.html">服务协议 · Terms</a>
+        <a href="./guides.html">Use-Case Guides</a>
+        <a href="./support.html">Support &amp; FAQ</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="https://apps.apple.com/app/id6816664937" target="_blank" rel="noopener">App Store</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero container">
-      <div class="badge">🎨 图片本机处理 · 零广告 · 绝无后台上传 | On-Device Photos · No Ads · Zero Cloud Sync</div>
-      <h1>把设备秒变专业<span>电子透写台</span></h1>
-      <div class="hero-h1-en">Turn Your Device into a Professional Tracing Lightbox</div>
-      <p class="cn">一键锁屏吞掉一切误触，素描与纯净轮廓智能提取。直接在平板上铺一张A4纸，拿起铅笔轻松学画画！</p>
-      <p class="en">One-tap screen lock eliminates accidental touches. Extract smart sketches and clean outlines. Place regular paper over your screen and start tracing effortlessly!</p>
-      
+      <div class="badge">On-Device Processing · No Account · No Ads · No Subscription</div>
+      <h1>Turn Your iPad or iPhone into a <span>Touch-Locked Tracing Lightbox</span></h1>
+      <p class="lead">Import any photo, extract clean line art or pencil sketches, lock the screen against palm and paper touches, place real paper on top, and trace effortlessly.</p>
+      <p class="sub">Built for sketching, anime line art, tattoo stencils, calligraphy, bullet journals, and kids' drawing practice—with an optional one-time Lifetime unlock.</p>
+
       <div class="actions">
-        <a href="./support.html" class="btn btn-primary">技术支持 · Support & FAQ</a>
-        <a href="./privacy.html" class="btn btn-secondary">隐私政策 · Privacy Policy</a>
+        <a href="https://apps.apple.com/app/id6816664937" target="_blank" rel="noopener" class="btn btn-primary">Download on the App Store</a>
+        <a href="./guides.html" class="btn btn-secondary">Tracing Guides</a>
+        <a href="./support.html" class="btn btn-secondary">Support &amp; FAQ</a>
       </div>
 
       <div class="hero-img">
-        <img src="./assets/splash.png" alt="TraceLock App Preview">
+        <img src="./assets/splash.png" alt="TraceLock digital tracing lightbox app preview">
       </div>
     </section>
 
-    <section class="features container">
+    <section class="section container">
       <div class="section-title">
-        <h2>专为临摹而生的核心体验</h2>
-        <h3>Built Specially for Tracing, Sketching & Drawing</h3>
-        <p>告别昂贵笨重的物理拷贝台，让每一张好照片都变成你的画画底稿 · Replace bulky light tables with your digital device</p>
+        <h2>Why Creators Use TraceLock Instead of a Bulky Light Pad</h2>
+        <p>Focused on one job: keeping your reference image rock-steady and crisp underneath real paper.</p>
       </div>
 
       <div class="grid">
         <div class="card">
           <div class="card-icon">🔒</div>
-          <h3>底层防误触锁定</h3>
-          <h4>True Touch-Proof Lock</h4>
-          <p class="cn">进入锁屏临摹状态，底层手势拦截技术彻底吞掉手掌压屏、画纸擦碰误触；长按2秒呼吸倒计时安全解锁，无惧误触中断。</p>
-          <p class="en">System-level gesture intercept swallows palm resting and paper sliding. Hold 2 seconds to unlock safely with a visual countdown ring.</p>
+          <h3>True Touch-Proof Screen Lock</h3>
+          <p>System-level touch interception swallows accidental palm resting and sliding paper. Hold the unlock ring for 2 seconds to unlock safely without losing alignment.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">✏️</div>
-          <h3>智能转线稿引擎</h3>
-          <h4>Smart Line-Art Engine</h4>
-          <p class="cn">高斯差分 (DoG) 纯净轮廓与颜色减淡素描算法，高清照片自动提炼清晰黑白线稿，平坦背景保持纯白，笔触清晰利落。</p>
-          <p class="en">Difference of Gaussians (DoG) and Color Dodge algorithms turn photos into clear black & white line drawings with clean white backgrounds.</p>
+          <h3>On-Device Line-Art Extraction</h3>
+          <p>Convert busy photos into clean outlines or pencil-style sketches using Difference of Gaussians (DoG) and Color Dodge filters—all processed locally on your device.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">🎚️</div>
-          <h3>悬浮上下滑杆</h3>
-          <h4>Vertical Slider Control</h4>
-          <p class="cn">按需弹出右侧滑杆，上下滑动实时微调线条粗细、细节深浅与对比灵敏度，所见即所得，松手即算。</p>
-          <p class="en">On-demand vertical slider allows real-time fine-tuning of line thickness, contour depth, and sensitivity with instant visual feedback.</p>
+          <h3>Real-Time Line Weight Slider</h3>
+          <p>Fine-tune line thickness, contour detail, and contrast sensitivity with an on-demand vertical slider so faint details stay visible through paper.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">💡</div>
-          <h3>高透光常亮护航</h3>
-          <h4>Max Brightness & Keep Awake</h4>
-          <p class="cn">锁屏期间屏幕自动调至最高亮度并保持常亮，光线强劲穿透素描纸、打印纸或水彩纸，描线清晰无比。</p>
-          <p class="en">Automatically turns screen brightness to maximum and keeps it awake during tracing, clearly shining through copy paper, sketch paper, or vellum.</p>
+          <h3>Max Brightness &amp; Keep Awake</h3>
+          <p>Lock mode automatically boosts display brightness to maximum and keeps your screen awake so lines shine clearly through 70g–80g copy paper, sketch paper, or vellum.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">🔄</div>
-          <h3>构图无级掌控</h3>
-          <h4>Smooth Canvas Navigation</h4>
-          <p class="cn">支持多点触控双指自由缩放、任意平移、90°顺逆时针旋转与水平一键镜像翻转，左撇子右撇子都顺手。</p>
-          <p class="en">Smooth pinch-to-zoom, pan, 90° clockwise/counter-clockwise rotation, and horizontal mirror flip for perfect framing.</p>
+          <h3>Zoom, Pan, Rotate &amp; Mirror Flip</h3>
+          <p>Pinch to zoom, drag to position, rotate in 90° steps, and mirror-flip horizontally for left-handed comfort or tattoo stencil transfer prep.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">📄</div>
-          <h3>A4 练习纸与多图排版</h3>
-          <h4>A4 Coloring Sheets & Print</h4>
-          <p class="cn">单图或 2×2 / 3×3 多图智能排版，多图同步缩放拖动。一键 AirPrint 打印或导出高清 PDF，下笔更从容。</p>
-          <p class="en">Single or multi-image grid layouts with synchronized zoom and pan. Direct AirPrint or crisp PDF export for paper practice.</p>
+          <h3>A4 Printable Sheets &amp; Showcase Cards</h3>
+          <p>Arrange single or 2×2 / 3×3 grid layouts with synchronized pan/zoom, print via AirPrint or export crisp A4 PDFs, and align finished paper drawings via camera.</p>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-icon">📸</div>
-          <h3>画作成品对齐打卡</h3>
-          <h4>Artwork Showcase & Card</h4>
-          <p class="cn">临摹完成后，使用相机将实体画纸与数字底图并排对齐拍照，自动合成精致打卡卡片，见证每一次进步。</p>
-          <p class="en">Align your finished paper drawing with the original sketch via camera to generate beautiful side-by-side showcase cards.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">🛡️</div>
-          <h3>图片本机处理</h3>
-          <h4>On-Device & Private</h4>
-          <p class="cn">不索取多余权限，不收集设备识别码，无第三方追踪 SDK。切到后台或关闭再打开，上次构图与滤镜无缝保留。</p>
-          <p class="en">No unnecessary permissions, zero tracking SDKs, and no cloud uploads. App state auto-persists across background switching.</p>
-        </div>
+      <div class="summary-box">
+        <h3>Pricing &amp; Privacy at a Glance</h3>
+        <ul>
+          <li><strong>Free Trial:</strong> 5-day full-featured trial with zero ads and no auto-renewing trap.</li>
+          <li><strong>Free Forever Core:</strong> Photo import, framing, and basic line-art conversion stay free after trial.</li>
+          <li><strong>One-Time Lifetime Purchase:</strong> Optional single purchase unlocks touch-proof lock, A4 print/PDF, and high-res export—no subscription.</li>
+          <li><strong>100% Private:</strong> No account signup, no cloud photo uploads, and no third-party ad tracking SDKs.</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -183,14 +191,16 @@
   <footer>
     <div class="container">
       <div class="footer-links">
-        <a href="./index.html">首页 · Home</a>
-        <a href="./support.html">技术支持 · Support</a>
-        <a href="./privacy.html">隐私政策 · Privacy</a>
-        <a href="./terms.html">服务协议 · Terms</a>
-        <a href="mailto:matehubnet@outlook.com?subject=TraceLock%20Support">联系我们 · Email</a>
+        <a href="./index.html">Home</a>
+        <a href="./guides.html">Use-Case Guides</a>
+        <a href="./support.html">Support &amp; FAQ</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="https://apps.apple.com/app/id6816664937" target="_blank" rel="noopener">App Store</a>
+        <a href="mailto:matehubnet@outlook.com?subject=TraceLock%20Support">Contact</a>
       </div>
-      <p style="margin-bottom: 8px;">官方支持邮箱 · Support Email: <a href="mailto:matehubnet@outlook.com" style="color: #A5B4FC; text-decoration: none;">matehubnet@outlook.com</a></p>
-      <p>&copy; 2026 临摹板 (TraceLock) · 保持纯净，为创作者服务 | Stay Pure, Built for Creators</p>
+      <p style="margin-bottom: 8px;">Support Email: <a href="mailto:matehubnet@outlook.com" style="color: #A5B4FC; text-decoration: none;">matehubnet@outlook.com</a></p>
+      <p>&copy; 2026 TraceLock · Built for Creators</p>
     </div>
   </footer>
 </body>
