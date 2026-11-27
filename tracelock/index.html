@@ -10,7 +10,7 @@
   <meta property="og:title" content="TraceLock: Tracing Lightbox for iPad &amp; iPhone">
   <meta property="og:description" content="Import a photo, convert it to clean line art, lock the screen against accidental touches, place paper on top, and trace. Optional one-time lifetime unlock with no subscription.">
   <meta property="og:url" content="https://roln.github.io/tracelock/">
-  <meta property="og:image" content="https://roln.github.io/tracelock/assets/splash.png">
+  <meta property="og:image" content="https://roln.github.io/tracelock/assets/promo-poster.jpg">
   <link rel="icon" href="./assets/icon.png">
   <script type="application/ld+json">
   {
@@ -71,8 +71,8 @@
     .btn-secondary { background: var(--surface); color: var(--text-main); border: 1px solid var(--surface-border); }
     .btn-secondary:hover { background: #334155; }
 
-    .hero-img { margin-top: 48px; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.6); max-width: 720px; margin-left: auto; margin-right: auto; }
-    .hero-img img { width: 100%; display: block; }
+    .hero-video { margin-top: 48px; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.6); max-width: 820px; margin-left: auto; margin-right: auto; background: #000; }
+    .hero-video video { width: 100%; display: block; }
 
     .section { padding: 72px 0; }
     .section-title { text-align: center; margin-bottom: 44px; }
@@ -127,8 +127,18 @@
         <a href="./support.html" class="btn btn-secondary">Support &amp; FAQ</a>
       </div>
 
-      <div class="hero-img">
-        <img src="./assets/splash.png" alt="TraceLock digital tracing lightbox app preview">
+      <div class="hero-video">
+        <video
+          src="./assets/promo.mp4"
+          poster="./assets/promo-poster.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          preload="metadata"
+          aria-label="TraceLock 15-second tracing lightbox demo video"
+        ></video>
       </div>
     </section>
 
